@@ -1,0 +1,84 @@
+Step 00 — one quarter in RAM at a time (EDA + schema per folder)
+Run started: 2026-04-24T17:11:31
+Consolidated summary (all quarters): c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Summaries\philgeps_understanding_summary.txt
+
+2020/Q2  (segment_key=2020_Q2)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2020\Q2
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2020\Q2
+
+2020/Q3  (segment_key=2020_Q3)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2020\Q3
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2020\Q3
+
+2021/Q1  (segment_key=2021_Q1)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2021\Q1
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2021\Q1
+
+2021/Q2  (segment_key=2021_Q2)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2021\Q2
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2021\Q2
+
+2021/Q3  (segment_key=2021_Q3)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2021\Q3
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2021\Q3
+
+2021/Q4  (segment_key=2021_Q4)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2021\Q4
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2021\Q4
+
+2022/Q2  (segment_key=2022_Q2)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2022\Q2
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2022\Q2
+
+2022/Q3  (segment_key=2022_Q3)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2022\Q3
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2022\Q3
+
+2022/Q4  (segment_key=2022_Q4)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2022\Q4
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2022\Q4
+
+2023/Q1  (segment_key=2023_Q1)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2023\Q1
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2023\Q1
+
+2023/Q2  (segment_key=2023_Q2)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2023\Q2
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2023\Q2
+
+2023/Q3  (segment_key=2023_Q3)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2023\Q3
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2023\Q3
+
+2023/Q4  (segment_key=2023_Q4)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2023\Q4
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2023\Q4
+
+2024/Q1  (segment_key=2024_Q1)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2024\Q1
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2024\Q1
+
+2024/Q2  (segment_key=2024_Q2)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2024\Q2
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2024\Q2
+
+2024/Q3  (segment_key=2024_Q3)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2024\Q3
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2024\Q3
+
+2024/Q4  (segment_key=2024_Q4)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2024\Q4
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2024\Q4
+
+2025/Q1  (segment_key=2025_Q1)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2025\Q1
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2025\Q1
+
+2025/Q2  (segment_key=2025_Q2)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2025\Q2
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2025\Q2
+
+2025/Q3  (segment_key=2025_Q3)
+  EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2025\Q3
+  Schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2025\Q3
+

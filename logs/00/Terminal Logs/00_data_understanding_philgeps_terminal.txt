@@ -1,0 +1,24 @@
+Loaded April-June 2020.xlsx::Sheet1 (2020 / 2020/Q2): 163,986 rows, drift=MISMATCH
+Loaded July-September 2020.xlsx::Sheet1 (2020 / 2020/Q3): 200,152 rows, drift=MISMATCH
+Loaded 2021_Jan-Mar.csv (2021 / 2021/Q1): 456,114 rows, drift=OK
+Loaded 2021_Aprl-Jun.csv (2021 / 2021/Q2): 468,622 rows, drift=OK
+Loaded 2021_Jul-Sep.csv (2021 / 2021/Q3): 478,311 rows, drift=OK
+Loaded 2021_Oct-Dec.csv (2021 / 2021/Q4): 501,644 rows, drift=MISMATCH
+Loaded 2022_Apr-Jun.csv (2022 / 2022/Q2): 369,554 rows, drift=OK
+Loaded 2022 _Jul-Sep.csv (2022 / 2022/Q3): 428,358 rows, drift=OK
+Loaded 2022 _Oct-Dec.csv (2022 / 2022/Q4): 504,833 rows, drift=OK
+Loaded 2023_(JAN-MAR).csv (2023 / 2023/Q1): 405,796 rows, drift=OK
+Loaded 2023_(APR-JUN).csv (2023 / 2023/Q2): 436,736 rows, drift=OK
+Loaded 2023_(JUL-SEPT).csv (2023 / 2023/Q3): 450,701 rows, drift=OK
+Loaded 2023_(OCT-DEC).csv (2023 / 2023/Q4): 450,311 rows, drift=OK
+Loaded 2024_Jan-Mar.csv (2024 / 2024/Q1): 440,342 rows, drift=OK
+Loaded 2024_Apr-Jun.csv (2024 / 2024/Q2): 474,381 rows, drift=OK
+Loaded 2024_Jul-Sep.csv (2024 / 2024/Q3): 469,108 rows, drift=OK
+Loaded 2024_Oct-Dec.csv (2024 / 2024/Q4): 512,719 rows, drift=OK
+Loaded 2025_(JAN-MAR).csv (2025 / 2025/Q1): 469,569 rows, drift=OK
+Loaded 2025_(APR-JUN).csv (2025 / 2025/Q2): 372,122 rows, drift=OK
+Loaded 2025_(JUL-SEPT).csv (2025 / 2025/Q3): 361,502 rows, drift=OK
+Done. Quarter manifest: c:\Users\loper\Desktop\version_4\MedFlowPH\logs\00\step00_quarter_manifest.txt
+Consolidated summary: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Summaries\philgeps_understanding_summary.txt
+Results root: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00
+Logs: c:\Users\loper\Desktop\version_4\MedFlowPH\logs\00

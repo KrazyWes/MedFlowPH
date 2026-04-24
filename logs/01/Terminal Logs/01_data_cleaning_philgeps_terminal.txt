@@ -1,0 +1,29 @@
+PhilGEPS: Loaded PhilGEPS - April-June 2020.xlsx (year 2020) (163,986 raw rows)
+PhilGEPS: Loaded PhilGEPS - July-September 2020.xlsx (year 2020) (200,152 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2021_Aprl-Jun.csv (year 2021) (468,622 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2021_Jan-Mar.csv (year 2021) (456,114 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2021_Jul-Sep.csv (year 2021) (478,311 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2021_Oct-Dec.csv (year 2021) (501,644 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2022 _Jul-Sep.csv (year 2022) (428,358 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2022 _Oct-Dec.csv (year 2022) (504,833 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2022_Apr-Jun.csv (year 2022) (369,554 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2023_(APR-JUN).csv (year 2023) (436,736 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2023_(JAN-MAR).csv (year 2023) (405,796 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2023_(JUL-SEPT).csv (year 2023) (450,701 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2023_(OCT-DEC).csv (year 2023) (450,311 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2024_Apr-Jun.csv (year 2024) (474,381 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2024_Jan-Mar.csv (year 2024) (440,342 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2024_Jul-Sep.csv (year 2024) (469,108 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2024_Oct-Dec.csv (year 2024) (512,719 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2025_(APR-JUN).csv (year 2025) (372,122 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2025_(JAN-MAR).csv (year 2025) (469,569 raw rows)
+PhilGEPS: Loaded PhilGEPS - 2025_(JUL-SEPT).csv (year 2025) (361,502 raw rows)
+PhilGEPS: Concatenated medical rows (before cross-file dedup): 561,761
+PhilGEPS: Saved 32,845 records (year 2020) -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\01\PhilGEPS-yearly\philgeps_2020_medical_procurement.csv
+PhilGEPS: Saved 37,079 records (year 2021) -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\01\PhilGEPS-yearly\philgeps_2021_medical_procurement.csv
+PhilGEPS: Saved 94,174 records (year 2022) -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\01\PhilGEPS-yearly\philgeps_2022_medical_procurement.csv
+PhilGEPS: Saved 125,724 records (year 2023) -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\01\PhilGEPS-yearly\philgeps_2023_medical_procurement.csv
+PhilGEPS: Saved 132,857 records (year 2024) -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\01\PhilGEPS-yearly\philgeps_2024_medical_procurement.csv
+PhilGEPS: Saved 64,926 records (year 2025) -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\01\PhilGEPS-yearly\philgeps_2025_medical_procurement.csv
+PhilGEPS: Saved 487,605 records (all years) -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\01\philgeps_medical_procurement.csv
+Done. Terminal log: c:\Users\loper\Desktop\version_4\MedFlowPH\logs\01\Terminal Logs, activity: c:\Users\loper\Desktop\version_4\MedFlowPH\logs\01\Log entries, EDA: c:\Users\loper\Desktop\version_4\MedFlowPH\results\01\Exploratory Data Analysis (per-year + merged/), schema: c:\Users\loper\Desktop\version_4\MedFlowPH\results\01\Data Schema, summaries: c:\Users\loper\Desktop\version_4\MedFlowPH\results\01\Summaries, CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\01

@@ -1,0 +1,906 @@
+PhilGEPS — step 00 data understanding (pre-cleaning)
+Run started: 2026-04-24T17:11:31
+Run finished: 2026-04-24T17:29:02
+File paths below use paths relative to the MedFlowPH project root when possible.
+
+========================================================================
+OVERVIEW — ALL QUARTERS
+========================================================================
+
+  2020_Q2       2020/Q2          163,986      1 file(s)  drift=MISMATCH        cols=43
+  2020_Q3       2020/Q3          200,152      1 file(s)  drift=MISMATCH        cols=43
+  2021_Q1       2021/Q1          456,114      1 file(s)  drift=OK              cols=46
+  2021_Q2       2021/Q2          468,622      1 file(s)  drift=OK              cols=46
+  2021_Q3       2021/Q3          478,311      1 file(s)  drift=OK              cols=46
+  2021_Q4       2021/Q4          501,644      1 file(s)  drift=MISMATCH        cols=46
+  2022_Q2       2022/Q2          369,554      1 file(s)  drift=OK              cols=46
+  2022_Q3       2022/Q3          428,358      1 file(s)  drift=OK              cols=46
+  2022_Q4       2022/Q4          504,833      1 file(s)  drift=OK              cols=46
+  2023_Q1       2023/Q1          405,796      1 file(s)  drift=OK              cols=46
+  2023_Q2       2023/Q2          436,736      1 file(s)  drift=OK              cols=46
+  2023_Q3       2023/Q3          450,701      1 file(s)  drift=OK              cols=46
+  2023_Q4       2023/Q4          450,311      1 file(s)  drift=OK              cols=46
+  2024_Q1       2024/Q1          440,342      1 file(s)  drift=OK              cols=46
+  2024_Q2       2024/Q2          474,381      1 file(s)  drift=OK              cols=46
+  2024_Q3       2024/Q3          469,108      1 file(s)  drift=OK              cols=46
+  2024_Q4       2024/Q4          512,719      1 file(s)  drift=OK              cols=46
+  2025_Q1       2025/Q1          469,569      1 file(s)  drift=OK              cols=46
+  2025_Q2       2025/Q2          372,122      1 file(s)  drift=OK              cols=46
+  2025_Q3       2025/Q3          361,502      1 file(s)  drift=OK              cols=46
+
+  Total rows (sum of segments): 8,414,861
+  Segments processed: 20
+  Sum of within-segment exact duplicate rows: 1,546,639
+  Per-column schema/null detail: results/00/Raw Dataset Schema/{year}/{Qn}/
+
+========================================================================
+CRITICAL FIELDS — NULL+EMPTY COUNTS BY SEGMENT
+========================================================================
+
+                     2020_Q2    2020_Q3    2021_Q1    2021_Q2    2021_Q3    2021_Q4    2022_Q2    2022_Q3    2022_Q4    2023_Q1    2023_Q2    2023_Q3    2023_Q4    2024_Q1    2024_Q2    2024_Q3    2024_Q4    2025_Q1    2025_Q2    2025_Q3    
+  UNSPSC Description     101,716    136,319    207,344    219,852    229,542    501,644    196,365    233,477    265,873    194,625    230,513    229,027    218,541    206,985    229,588    235,861    263,949    246,020    214,307    281,249
+  Item Name               51,387     67,294     83,545     96,053    105,742    501,644    100,640    124,140    141,607     99,538    117,269    119,966    111,499    101,156    121,035    126,391    140,150    125,665    113,406    156,262
+  Item Description        51,423     67,343     83,611     96,119    105,808    501,644    100,773    124,287    141,697     99,623    117,330    120,061    111,621    101,274    121,135    126,451    140,216    125,714    113,440    156,357
+  Contract Amount        102,023    136,440    207,164    219,672    229,362    501,644    196,048    233,241    265,789    194,565    230,367    228,571    218,526    206,776    229,239    235,328    263,769    245,843    214,266    281,344
+  Item Budget             51,386     67,266     83,543     96,051    105,740    501,644    100,640    124,139    141,601     99,511    117,267    119,965    111,498    101,154    121,035    126,385    140,148    125,664    113,395    156,215
+  Award Reference No.    163,986    200,152    206,902    219,410    229,100    501,644    195,828    233,021    265,526    194,348    230,175    228,380    218,283    206,585    229,022    235,122    263,507    245,615    214,113    281,144
+  Bid Reference No.            0          0          0          0          0    501,644          0          0          0          0          0          0          0          0          0          0          0          0          0          0
+  UNSPSC Code            101,716    136,319    207,344    219,852    229,542    501,644    196,365    233,477    265,873    194,625    230,513    229,027    218,541    206,985    229,588    235,861    263,949    246,020    214,307    281,249
+
+========================================================================
+DUPLICATES — WITHIN SEGMENT ONLY
+========================================================================
+
+  No full merge in step 00. Duplicate counts are within each quarter segment only; cross-segment / cross-year duplicates are not evaluated here (see step 01).
+
+  Segment               Rows  Exact dup rows  Key columns (dup keys / unique keys)
+  2020_Q2            163,986               0  Award Reference No.: 0 / 0; Bid Reference No.: 68,168 / 101,832
+  2020_Q3            200,152               0  Award Reference No.: 0 / 0; Bid Reference No.: 85,013 / 122,981
+  2021_Q1            456,114          66,792  Award Reference No.: 97,110 / 175,879; Bid Reference No.: 230,449 / 254,408
+  2021_Q2            468,622          66,792  Award Reference No.: 97,110 / 175,879; Bid Reference No.: 230,544 / 266,847
+  2021_Q3            478,311          66,792  Award Reference No.: 97,110 / 175,878; Bid Reference No.: 230,554 / 276,526
+  2021_Q4            501,644         501,643  Award Reference No.: 0 / 0; Bid Reference No.: 0 / 0
+  2022_Q2            369,554          50,449  Award Reference No.: 73,833 / 118,281; Bid Reference No.: 185,728 / 205,863
+  2022_Q3            428,358          56,222  Award Reference No.: 81,968 / 133,538; Bid Reference No.: 202,634 / 250,001
+  2022_Q4            504,833          70,118  Award Reference No.: 98,380 / 162,918; Bid Reference No.: 237,921 / 294,512
+  2023_Q1            405,796          69,806  Award Reference No.: 97,047 / 137,001; Bid Reference No.: 211,043 / 219,623
+  2023_Q2            436,736          56,936  Award Reference No.: 82,423 / 144,518; Bid Reference No.: 209,403 / 252,308
+  2023_Q3            450,701          65,297  Award Reference No.: 92,243 / 151,439; Bid Reference No.: 216,614 / 259,164
+  2023_Q4            450,311          67,625  Award Reference No.: 96,251 / 158,933; Bid Reference No.: 221,515 / 255,085
+  2024_Q1            440,342          74,843  Award Reference No.: 107,220 / 151,499; Bid Reference No.: 233,492 / 233,968
+  2024_Q2            474,381          74,828  Award Reference No.: 104,664 / 164,652; Bid Reference No.: 230,885 / 271,278
+  2024_Q3            469,108          66,798  Award Reference No.: 95,134 / 160,424; Bid Reference No.: 216,957 / 278,619
+  2024_Q4            512,719          66,812  Award Reference No.: 97,110 / 175,879; Bid Reference No.: 231,420 / 310,284
+  2025_Q1            469,569          63,908  Award Reference No.: 92,159 / 154,371; Bid Reference No.: 223,755 / 272,858
+  2025_Q2            372,122          41,876  Award Reference No.: 60,896 / 112,498; Bid Reference No.: 169,866 / 221,744
+  2025_Q3            361,502          19,102  Award Reference No.: 28,109 / 58,854; Bid Reference No.: 131,813 / 243,719
+
+========================================================================
+MEDICINE FILTER — SNAPSHOT BY SEGMENT
+========================================================================
+
+  Segment        Baseline UNSPSC  Top overlap (non-baseline)              Recommendation (abridged)
+  2020_Q2                 10,354  Business Category (overlap 9,729)       (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2020_Q3                 11,424  Business Category (overlap 10,805)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2021_Q1                 41,025  Business Category (overlap 39,639)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2021_Q2                 41,026  Business Category (overlap 39,640)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2021_Q3                 41,025  Business Category (overlap 39,639)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2021_Q4                      0  Item Name (overlap 0)                   (b) Baseline produced zero matches — expand to Item Name…
+  2022_Q2                 28,185  Business Category (overlap 26,217)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2022_Q3                 33,380  Business Category (overlap 31,580)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2022_Q4                 53,418  Business Category (overlap 51,551)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2023_Q1                 32,796  Business Category (overlap 31,461)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2023_Q2                 30,385  Business Category (overlap 28,512)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2023_Q3                 41,208  Business Category (overlap 39,720)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2023_Q4                 45,917  Business Category (overlap 44,043)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2024_Q1                 32,502  Business Category (overlap 30,819)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2024_Q2                 39,040  Business Category (overlap 36,967)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2024_Q3                 39,228  Business Category (overlap 37,487)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2024_Q4                 41,025  Business Category (overlap 39,639)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2025_Q1                 27,643  Business Category (overlap 26,282)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2025_Q2                 17,984  Business Category (overlap 16,765)      (c) Conservative multi-field rule: keep UNSPSC Descripti…
+  2025_Q3                  7,685  Business Category (overlap 6,984)       (c) Conservative multi-field rule: keep UNSPSC Descripti…
+
+========================================================================
+K-MEANS FEATURE ROLES (canonical 46 columns — static taxonomy)
+========================================================================
+
+  [date_derivable]
+    - Award Date
+    - Closing Date
+    - Contract Effectivity Date
+    - Contract End Date
+    - Notice to Proceed Date
+    - Published Date
+    - Published Date(Award)
+
+  [high_cardinality_text]
+    - Area of Delivery
+    - Award Title
+    - Awardee Organization Name
+    - City/Municipality
+    - City/Municipality of Awardee
+    - Funding Instrument
+    - Item Description
+    - Item Name
+    - Notice Title
+    - Procuring Entity (PE)
+    - Province
+    - Province of Awardee
+    - Trade Agreement
+    - UNSPSC Description
+    - UOM
+
+  [identifier_skip]
+    - Award Reference No.
+    - Bid Reference No.
+    - UNSPSC Code
+
+  [low_cardinality_encodable]
+    - Award Notice Status
+    - Awardee Joint Venture
+    - Awardee Size
+    - Bid Notice Status
+    - Business Category
+    - Calendar Type
+    - Classification
+    - Country of Awardee
+    - Funding Source
+    - Government Branch
+    - PE Organization Type
+    - PE Organization Type (Grouped)
+    - Procurement Mode
+    - Region
+    - Region of Awardee
+
+  [numeric_ready]
+    - Approved Budget of the Contract
+    - Contract Amount
+    - Item Budget
+    - Line Item No
+    - Quantity
+
+  [other_review]
+    - Contract Duration
+
+========================================================================
+SEGMENT DETAIL (compact)
+========================================================================
+
+------------------------------------------------------------------------
+2020_Q2  (2020/Q2)  —  163,986 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2020/April-June 2020.xlsx  :: April-June 2020.xlsx::Sheet1  | rows=163,986  cols=43  drift=MISMATCH
+  Top null % (columns, this segment):
+    - Procuring Entity (PE): 100.00% null  (float64)
+    - Region: 100.00% null  (float64)
+    - Province: 100.00% null  (float64)
+    - City/Municipality: 100.00% null  (float64)
+    - Government Branch: 100.00% null  (float64)
+    - PE Organization Type: 100.00% null  (float64)
+    - PE Organization Type (Grouped): 100.00% null  (float64)
+    - Bid Notice Status: 100.00% null  (float64)
+    - Award Reference No.: 100.00% null  (float64)
+    - Award Notice Status: 100.00% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=0  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=0  unique_non_null_keys=0
+    Bid Reference No.: rows_with_duplicate_key=68,168  unique_non_null_keys=101,832
+  Medicine filter: baseline UNSPSC keyword matches = 10,354
+  Per candidate column:
+    UNSPSC Description: kw=10,354  overlap=10,354  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=8,415  overlap=4,750  outside=3,665  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=5,531  overlap=2,821  outside=2,710  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=27,660  overlap=9,729  outside=17,931  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=22,871  overlap=6,498  outside=16,373  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=5,597  overlap=4,931  outside=666  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2020_Q3  (2020/Q3)  —  200,152 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2020/July-September 2020.xlsx  :: July-September 2020.xlsx::Sheet1  | rows=200,152  cols=43  drift=MISMATCH
+  Top null % (columns, this segment):
+    - Procuring Entity (PE): 100.00% null  (float64)
+    - Region: 100.00% null  (float64)
+    - Province: 100.00% null  (float64)
+    - City/Municipality: 100.00% null  (float64)
+    - Government Branch: 100.00% null  (float64)
+    - PE Organization Type: 100.00% null  (float64)
+    - PE Organization Type (Grouped): 100.00% null  (float64)
+    - Bid Notice Status: 100.00% null  (float64)
+    - Award Reference No.: 100.00% null  (float64)
+    - Award Notice Status: 100.00% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=0  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=0  unique_non_null_keys=0
+    Bid Reference No.: rows_with_duplicate_key=85,013  unique_non_null_keys=122,981
+  Medicine filter: baseline UNSPSC keyword matches = 11,424
+  Per candidate column:
+    UNSPSC Description: kw=11,424  overlap=11,424  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=7,846  overlap=3,952  outside=3,894  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=5,783  overlap=2,799  outside=2,984  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=28,326  overlap=10,805  outside=17,521  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=24,619  overlap=7,884  outside=16,735  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=5,306  overlap=4,445  outside=861  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2021_Q1  (2021/Q1)  —  456,114 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2021/2021_Jan-Mar.csv  :: 2021_Jan-Mar.csv  | rows=456,114  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.17% null  (object)
+    - Notice to Proceed Date: 55.95% null  (object)
+    - Contract Effectivity Date: 55.95% null  (object)
+    - Contract End Date: 55.95% null  (object)
+    - Awardee Size: 48.44% null  (object)
+    - UNSPSC Code: 45.46% null  (float64)
+    - UNSPSC Description: 45.46% null  (object)
+    - Region of Awardee: 45.45% null  (object)
+    - Province of Awardee: 45.44% null  (object)
+    - Contract Amount: 45.42% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=66,792  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=97,110  unique_non_null_keys=175,879
+    Bid Reference No.: rows_with_duplicate_key=230,449  unique_non_null_keys=254,408
+  Medicine filter: baseline UNSPSC keyword matches = 41,025
+  Per candidate column:
+    UNSPSC Description: kw=41,025  overlap=41,025  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=20,295  overlap=13,175  outside=7,120  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=17,983  overlap=9,696  outside=8,287  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=73,381  overlap=39,639  outside=33,742  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=69,259  overlap=33,406  outside=35,853  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=15,276  overlap=13,541  outside=1,735  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2021_Q2  (2021/Q2)  —  468,622 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2021/2021_Aprl-Jun.csv  :: 2021_Aprl-Jun.csv  | rows=468,622  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.19% null  (object)
+    - Notice to Proceed Date: 57.13% null  (object)
+    - Contract Effectivity Date: 57.13% null  (object)
+    - Contract End Date: 57.13% null  (object)
+    - Awardee Size: 49.82% null  (object)
+    - UNSPSC Code: 46.91% null  (float64)
+    - UNSPSC Description: 46.91% null  (object)
+    - Region of Awardee: 46.91% null  (object)
+    - Province of Awardee: 46.90% null  (object)
+    - Contract Amount: 46.88% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=66,792  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=97,110  unique_non_null_keys=175,879
+    Bid Reference No.: rows_with_duplicate_key=230,544  unique_non_null_keys=266,847
+  Medicine filter: baseline UNSPSC keyword matches = 41,026
+  Per candidate column:
+    UNSPSC Description: kw=41,026  overlap=41,026  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=20,295  overlap=13,175  outside=7,120  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=17,983  overlap=9,696  outside=8,287  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=75,334  overlap=39,640  outside=35,694  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=70,832  overlap=33,406  outside=37,426  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=15,276  overlap=13,541  outside=1,735  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2021_Q3  (2021/Q3)  —  478,311 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2021/2021_Jul-Sep.csv  :: 2021_Jul-Sep.csv  | rows=478,311  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.21% null  (object)
+    - Notice to Proceed Date: 57.99% null  (object)
+    - Contract Effectivity Date: 57.99% null  (object)
+    - Contract End Date: 57.99% null  (object)
+    - Awardee Size: 50.84% null  (object)
+    - UNSPSC Code: 47.99% null  (float64)
+    - UNSPSC Description: 47.99% null  (object)
+    - Region of Awardee: 47.99% null  (object)
+    - Province of Awardee: 47.97% null  (object)
+    - Contract Amount: 47.95% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=66,792  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=97,110  unique_non_null_keys=175,878
+    Bid Reference No.: rows_with_duplicate_key=230,554  unique_non_null_keys=276,526
+  Medicine filter: baseline UNSPSC keyword matches = 41,025
+  Per candidate column:
+    UNSPSC Description: kw=41,025  overlap=41,025  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=20,295  overlap=13,175  outside=7,120  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=17,983  overlap=9,696  outside=8,287  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=77,606  overlap=39,639  outside=37,967  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=72,867  overlap=33,406  outside=39,461  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=15,276  overlap=13,541  outside=1,735  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2021_Q4  (2021/Q4)  —  501,644 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2021/2021_Oct-Dec.csv  :: 2021_Oct-Dec.csv  | rows=501,644  cols=46  drift=MISMATCH
+  Top null % (columns, this segment):
+    - Procuring Entity (PE): 100.00% null  (float64)
+    - Region: 100.00% null  (float64)
+    - Province: 100.00% null  (float64)
+    - City/Municipality: 100.00% null  (float64)
+    - Government Branch: 100.00% null  (float64)
+    - PE Organization Type: 100.00% null  (float64)
+    - PE Organization Type (Grouped): 100.00% null  (float64)
+    - Bid Reference No.: 100.00% null  (float64)
+    - Notice Title: 100.00% null  (float64)
+    - Classification: 100.00% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=501,643  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=0  unique_non_null_keys=0
+    Bid Reference No.: rows_with_duplicate_key=0  unique_non_null_keys=0
+  Medicine filter: baseline UNSPSC keyword matches = 0
+  Per candidate column:
+    UNSPSC Description: kw=0  overlap=0  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=0  overlap=0  outside=0  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=0  overlap=0  outside=0  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=0  overlap=0  outside=0  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=0  overlap=0  outside=0  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=0  overlap=0  outside=0  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (b) Baseline produced zero matches — expand to Item Name + Item
+    Description with same keywords until UNSPSC coverage is
+    confirmed in raw files.
+
+------------------------------------------------------------------------
+2022_Q2  (2022/Q2)  —  369,554 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2022/2022_Apr-Jun.csv  :: 2022_Apr-Jun.csv  | rows=369,554  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 98.53% null  (object)
+    - Notice to Proceed Date: 64.21% null  (object)
+    - Contract Effectivity Date: 64.21% null  (object)
+    - Contract End Date: 64.21% null  (object)
+    - Awardee Size: 54.58% null  (object)
+    - UNSPSC Code: 53.14% null  (float64)
+    - UNSPSC Description: 53.14% null  (object)
+    - Contract Amount: 53.05% null  (float64)
+    - Region of Awardee: 53.05% null  (object)
+    - Province of Awardee: 53.03% null  (object)
+  Duplicates:
+    exact_duplicate_rows=50,449  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=73,833  unique_non_null_keys=118,281
+    Bid Reference No.: rows_with_duplicate_key=185,728  unique_non_null_keys=205,863
+  Medicine filter: baseline UNSPSC keyword matches = 28,185
+  Per candidate column:
+    UNSPSC Description: kw=28,185  overlap=28,185  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=16,430  overlap=10,931  outside=5,499  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=11,235  overlap=6,516  outside=4,719  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=54,069  overlap=26,217  outside=27,852  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=46,786  overlap=19,958  outside=26,828  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=12,947  overlap=11,498  outside=1,449  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2022_Q3  (2022/Q3)  —  428,358 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2022/2022 _Jul-Sep.csv  :: 2022 _Jul-Sep.csv  | rows=428,358  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.04% null  (object)
+    - Notice to Proceed Date: 65.35% null  (object)
+    - Contract Effectivity Date: 65.35% null  (object)
+    - Contract End Date: 65.35% null  (object)
+    - Awardee Size: 55.83% null  (object)
+    - UNSPSC Code: 54.51% null  (float64)
+    - UNSPSC Description: 54.51% null  (object)
+    - Contract Amount: 54.45% null  (float64)
+    - Province of Awardee: 54.45% null  (object)
+    - Region of Awardee: 54.44% null  (object)
+  Duplicates:
+    exact_duplicate_rows=56,222  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=81,968  unique_non_null_keys=133,538
+    Bid Reference No.: rows_with_duplicate_key=202,634  unique_non_null_keys=250,001
+  Medicine filter: baseline UNSPSC keyword matches = 33,380
+  Per candidate column:
+    UNSPSC Description: kw=33,380  overlap=33,380  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=19,899  overlap=13,577  outside=6,322  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=14,015  overlap=8,616  outside=5,399  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=59,736  overlap=31,580  outside=28,156  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=54,194  overlap=24,559  outside=29,635  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=16,059  overlap=14,065  outside=1,994  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2022_Q4  (2022/Q4)  —  504,833 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2022/2022 _Oct-Dec.csv  :: 2022 _Oct-Dec.csv  | rows=504,833  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.10% null  (object)
+    - Notice to Proceed Date: 62.48% null  (object)
+    - Contract Effectivity Date: 62.48% null  (object)
+    - Contract End Date: 62.48% null  (object)
+    - Awardee Size: 55.19% null  (object)
+    - UNSPSC Code: 52.67% null  (float64)
+    - UNSPSC Description: 52.67% null  (object)
+    - Contract Amount: 52.65% null  (float64)
+    - Region of Awardee: 52.64% null  (object)
+    - Province of Awardee: 52.64% null  (object)
+  Duplicates:
+    exact_duplicate_rows=70,118  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=98,380  unique_non_null_keys=162,918
+    Bid Reference No.: rows_with_duplicate_key=237,921  unique_non_null_keys=294,512
+  Medicine filter: baseline UNSPSC keyword matches = 53,418
+  Per candidate column:
+    UNSPSC Description: kw=53,418  overlap=53,418  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=24,850  overlap=18,008  outside=6,842  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=18,699  overlap=12,346  outside=6,353  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=85,405  overlap=51,551  outside=33,854  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=78,475  overlap=42,857  outside=35,618  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=20,400  overlap=18,489  outside=1,911  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2023_Q1  (2023/Q1)  —  405,796 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2023/2023_(JAN-MAR).csv  :: 2023_(JAN-MAR).csv  | rows=405,796  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.16% null  (object)
+    - Notice to Proceed Date: 58.18% null  (object)
+    - Contract Effectivity Date: 58.18% null  (object)
+    - Contract End Date: 58.18% null  (object)
+    - Awardee Size: 50.45% null  (object)
+    - Region of Awardee: 47.97% null  (object)
+    - UNSPSC Code: 47.96% null  (float64)
+    - UNSPSC Description: 47.96% null  (object)
+    - Contract Amount: 47.95% null  (float64)
+    - Province of Awardee: 47.94% null  (object)
+  Duplicates:
+    exact_duplicate_rows=69,806  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=97,047  unique_non_null_keys=137,001
+    Bid Reference No.: rows_with_duplicate_key=211,043  unique_non_null_keys=219,623
+  Medicine filter: baseline UNSPSC keyword matches = 32,796
+  Per candidate column:
+    UNSPSC Description: kw=32,796  overlap=32,796  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=15,671  overlap=11,408  outside=4,263  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=12,896  overlap=8,007  outside=4,889  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=53,022  overlap=31,461  outside=21,561  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=48,172  overlap=25,235  outside=22,937  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=13,657  overlap=11,994  outside=1,663  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2023_Q2  (2023/Q2)  —  436,736 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2023/2023_(APR-JUN).csv  :: 2023_(APR-JUN).csv  | rows=436,736  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.10% null  (object)
+    - Notice to Proceed Date: 62.70% null  (object)
+    - Contract Effectivity Date: 62.70% null  (object)
+    - Contract End Date: 62.70% null  (object)
+    - Awardee Size: 54.53% null  (object)
+    - UNSPSC Code: 52.78% null  (float64)
+    - UNSPSC Description: 52.78% null  (object)
+    - Region of Awardee: 52.76% null  (object)
+    - Contract Amount: 52.75% null  (float64)
+    - Province of Awardee: 52.74% null  (object)
+  Duplicates:
+    exact_duplicate_rows=56,936  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=82,423  unique_non_null_keys=144,518
+    Bid Reference No.: rows_with_duplicate_key=209,403  unique_non_null_keys=252,308
+  Medicine filter: baseline UNSPSC keyword matches = 30,385
+  Per candidate column:
+    UNSPSC Description: kw=30,385  overlap=30,385  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=18,748  overlap=12,688  outside=6,060  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=14,846  overlap=9,017  outside=5,829  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=54,617  overlap=28,512  outside=26,105  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=49,103  overlap=22,710  outside=26,393  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=15,240  overlap=13,385  outside=1,855  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2023_Q3  (2023/Q3)  —  450,701 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2023/2023_(JUL-SEPT).csv  :: 2023_(JUL-SEPT).csv  | rows=450,701  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.00% null  (object)
+    - Notice to Proceed Date: 60.54% null  (object)
+    - Contract Effectivity Date: 60.54% null  (object)
+    - Contract End Date: 60.54% null  (object)
+    - Awardee Size: 52.83% null  (object)
+    - UNSPSC Code: 50.82% null  (float64)
+    - UNSPSC Description: 50.82% null  (object)
+    - Region of Awardee: 50.75% null  (object)
+    - Province of Awardee: 50.72% null  (object)
+    - Contract Amount: 50.71% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=65,297  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=92,243  unique_non_null_keys=151,439
+    Bid Reference No.: rows_with_duplicate_key=216,614  unique_non_null_keys=259,164
+  Medicine filter: baseline UNSPSC keyword matches = 41,208
+  Per candidate column:
+    UNSPSC Description: kw=41,208  overlap=41,208  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=20,212  overlap=14,035  outside=6,177  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=17,806  overlap=11,380  outside=6,426  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=67,719  overlap=39,720  outside=27,999  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=62,568  overlap=32,297  outside=30,271  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=16,291  overlap=14,342  outside=1,949  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2023_Q4  (2023/Q4)  —  450,311 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2023/2023_(OCT-DEC).csv  :: 2023_(OCT-DEC).csv  | rows=450,311  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 98.95% null  (object)
+    - Notice to Proceed Date: 58.34% null  (object)
+    - Contract Effectivity Date: 58.34% null  (object)
+    - Contract End Date: 58.34% null  (object)
+    - Awardee Size: 51.35% null  (object)
+    - Region of Awardee: 48.55% null  (object)
+    - Province of Awardee: 48.54% null  (object)
+    - UNSPSC Code: 48.53% null  (float64)
+    - UNSPSC Description: 48.53% null  (object)
+    - Contract Amount: 48.53% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=67,625  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=96,251  unique_non_null_keys=158,933
+    Bid Reference No.: rows_with_duplicate_key=221,515  unique_non_null_keys=255,085
+  Medicine filter: baseline UNSPSC keyword matches = 45,917
+  Per candidate column:
+    UNSPSC Description: kw=45,917  overlap=45,917  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=21,991  overlap=15,532  outside=6,459  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=17,525  overlap=11,356  outside=6,169  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=75,403  overlap=44,043  outside=31,360  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=69,687  overlap=37,483  outside=32,204  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=17,759  overlap=15,698  outside=2,061  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2024_Q1  (2024/Q1)  —  440,342 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2024/2024_Jan-Mar.csv  :: 2024_Jan-Mar.csv  | rows=440,342  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 98.89% null  (object)
+    - Notice to Proceed Date: 56.56% null  (object)
+    - Contract Effectivity Date: 56.56% null  (object)
+    - Contract End Date: 56.56% null  (object)
+    - Awardee Size: 49.27% null  (object)
+    - UNSPSC Code: 47.01% null  (float64)
+    - UNSPSC Description: 47.01% null  (object)
+    - Region of Awardee: 47.00% null  (object)
+    - Province of Awardee: 46.98% null  (object)
+    - Contract Amount: 46.96% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=74,843  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=107,220  unique_non_null_keys=151,499
+    Bid Reference No.: rows_with_duplicate_key=233,492  unique_non_null_keys=233,968
+  Medicine filter: baseline UNSPSC keyword matches = 32,502
+  Per candidate column:
+    UNSPSC Description: kw=32,502  overlap=32,502  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=18,333  overlap=10,728  outside=7,605  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=13,043  overlap=7,658  outside=5,385  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=57,312  overlap=30,819  outside=26,493  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=54,438  overlap=25,084  outside=29,354  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=12,566  overlap=11,125  outside=1,441  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2024_Q2  (2024/Q2)  —  474,381 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2024/2024_Apr-Jun.csv  :: 2024_Apr-Jun.csv  | rows=474,381  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 98.95% null  (object)
+    - Notice to Proceed Date: 58.57% null  (object)
+    - Contract Effectivity Date: 58.57% null  (object)
+    - Contract End Date: 58.57% null  (object)
+    - Awardee Size: 50.49% null  (object)
+    - UNSPSC Code: 48.40% null  (float64)
+    - UNSPSC Description: 48.40% null  (object)
+    - Region of Awardee: 48.38% null  (object)
+    - Province of Awardee: 48.35% null  (object)
+    - Contract Amount: 48.32% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=74,828  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=104,664  unique_non_null_keys=164,652
+    Bid Reference No.: rows_with_duplicate_key=230,885  unique_non_null_keys=271,278
+  Medicine filter: baseline UNSPSC keyword matches = 39,040
+  Per candidate column:
+    UNSPSC Description: kw=39,040  overlap=39,040  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=20,240  overlap=14,101  outside=6,139  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=16,719  overlap=10,801  outside=5,918  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=63,809  overlap=36,967  outside=26,842  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=59,153  overlap=30,380  outside=28,773  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=16,014  overlap=14,355  outside=1,659  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2024_Q3  (2024/Q3)  —  469,108 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2024/2024_Jul-Sep.csv  :: 2024_Jul-Sep.csv  | rows=469,108  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.22% null  (object)
+    - Notice to Proceed Date: 60.35% null  (object)
+    - Contract Effectivity Date: 60.35% null  (object)
+    - Contract End Date: 60.35% null  (object)
+    - Awardee Size: 52.55% null  (object)
+    - UNSPSC Code: 50.28% null  (float64)
+    - UNSPSC Description: 50.28% null  (object)
+    - Region of Awardee: 50.21% null  (object)
+    - Province of Awardee: 50.17% null  (object)
+    - Contract Amount: 50.16% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=66,798  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=95,134  unique_non_null_keys=160,424
+    Bid Reference No.: rows_with_duplicate_key=216,957  unique_non_null_keys=278,619
+  Medicine filter: baseline UNSPSC keyword matches = 39,228
+  Per candidate column:
+    UNSPSC Description: kw=39,228  overlap=39,228  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=21,120  overlap=13,451  outside=7,669  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=17,810  overlap=10,315  outside=7,495  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=67,128  overlap=37,487  outside=29,641  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=66,075  overlap=32,049  outside=34,026  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=15,455  overlap=13,738  outside=1,717  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2024_Q4  (2024/Q4)  —  512,719 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2024/2024_Oct-Dec.csv  :: 2024_Oct-Dec.csv  | rows=512,719  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.26% null  (object)
+    - Notice to Proceed Date: 60.81% null  (object)
+    - Contract Effectivity Date: 60.81% null  (object)
+    - Contract End Date: 60.81% null  (object)
+    - Awardee Size: 54.14% null  (object)
+    - UNSPSC Code: 51.48% null  (float64)
+    - UNSPSC Description: 51.48% null  (object)
+    - Region of Awardee: 51.48% null  (object)
+    - Province of Awardee: 51.46% null  (object)
+    - Contract Amount: 51.45% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=66,812  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=97,110  unique_non_null_keys=175,879
+    Bid Reference No.: rows_with_duplicate_key=231,420  unique_non_null_keys=310,284
+  Medicine filter: baseline UNSPSC keyword matches = 41,025
+  Per candidate column:
+    UNSPSC Description: kw=41,025  overlap=41,025  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=20,295  overlap=13,175  outside=7,120  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=17,983  overlap=9,696  outside=8,287  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=76,236  overlap=39,639  outside=36,597  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=73,025  overlap=33,406  outside=39,619  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=15,276  overlap=13,541  outside=1,735  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2025_Q1  (2025/Q1)  —  469,569 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2025/2025_(JAN-MAR).csv  :: 2025_(JAN-MAR).csv  | rows=469,569  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 98.96% null  (object)
+    - Notice to Proceed Date: 62.43% null  (object)
+    - Contract Effectivity Date: 62.43% null  (object)
+    - Contract End Date: 62.43% null  (object)
+    - Awardee Size: 54.20% null  (object)
+    - UNSPSC Code: 52.39% null  (float64)
+    - UNSPSC Description: 52.39% null  (object)
+    - Region of Awardee: 52.38% null  (object)
+    - Province of Awardee: 52.37% null  (object)
+    - Contract Amount: 52.36% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=63,908  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=92,159  unique_non_null_keys=154,371
+    Bid Reference No.: rows_with_duplicate_key=223,755  unique_non_null_keys=272,858
+  Medicine filter: baseline UNSPSC keyword matches = 27,643
+  Per candidate column:
+    UNSPSC Description: kw=27,643  overlap=27,643  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=17,734  overlap=10,600  outside=7,134  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=13,903  overlap=7,903  outside=6,000  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=54,729  overlap=26,282  outside=28,447  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=52,276  overlap=21,094  outside=31,182  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=12,316  overlap=10,784  outside=1,532  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2025_Q2  (2025/Q2)  —  372,122 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2025/2025_(APR-JUN).csv  :: 2025_(APR-JUN).csv  | rows=372,122  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.14% null  (object)
+    - Notice to Proceed Date: 68.12% null  (object)
+    - Contract Effectivity Date: 68.12% null  (object)
+    - Contract End Date: 68.12% null  (object)
+    - Awardee Size: 59.07% null  (object)
+    - Region of Awardee: 57.61% null  (object)
+    - Province of Awardee: 57.60% null  (object)
+    - UNSPSC Code: 57.59% null  (float64)
+    - UNSPSC Description: 57.59% null  (object)
+    - Contract Amount: 57.58% null  (float64)
+  Duplicates:
+    exact_duplicate_rows=41,876  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=60,896  unique_non_null_keys=112,498
+    Bid Reference No.: rows_with_duplicate_key=169,866  unique_non_null_keys=221,744
+  Medicine filter: baseline UNSPSC keyword matches = 17,984
+  Per candidate column:
+    UNSPSC Description: kw=17,984  overlap=17,984  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=14,071  overlap=6,993  outside=7,078  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=10,095  overlap=5,232  outside=4,863  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=43,822  overlap=16,765  outside=27,057  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=41,673  overlap=13,338  outside=28,335  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=8,687  overlap=7,314  outside=1,373  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.
+
+------------------------------------------------------------------------
+2025_Q3  (2025/Q3)  —  361,502 rows
+------------------------------------------------------------------------
+  Files:
+    - raw_datasets/PhilGEPS/2025/2025_(JUL-SEPT).csv  :: 2025_(JUL-SEPT).csv  | rows=361,502  cols=46  drift=OK
+  Top null % (columns, this segment):
+    - Awardee Joint Venture: 99.07% null  (object)
+    - Notice to Proceed Date: 85.26% null  (object)
+    - Contract Effectivity Date: 85.26% null  (object)
+    - Contract End Date: 85.26% null  (object)
+    - Awardee Size: 78.55% null  (object)
+    - Contract Amount: 77.83% null  (float64)
+    - Region of Awardee: 77.81% null  (object)
+    - Province of Awardee: 77.80% null  (object)
+    - UNSPSC Code: 77.80% null  (float64)
+    - UNSPSC Description: 77.80% null  (object)
+  Duplicates:
+    exact_duplicate_rows=19,102  (within this segment)
+    Award Reference No.: rows_with_duplicate_key=28,109  unique_non_null_keys=58,854
+    Bid Reference No.: rows_with_duplicate_key=131,813  unique_non_null_keys=243,719
+  Medicine filter: baseline UNSPSC keyword matches = 7,685
+  Per candidate column:
+    UNSPSC Description: kw=7,685  overlap=7,685  outside=0  risk: baseline; broad keywords may include non-medicine uses of 'health' etc.
+    Item Name: kw=9,193  overlap=3,259  outside=5,934  risk: medium — free text; review sample of match_outside_baseline rows
+    Item Description: kw=8,003  overlap=2,861  outside=5,142  risk: medium — free text; review sample of match_outside_baseline rows
+    UNSPSC Code: kw=0  overlap=0  outside=0  risk: low–medium if validated against UNSPSC segments; codes alone need segment rules
+    Classification: kw=0  overlap=0  outside=0  risk: medium — category labels can be broad
+    Business Category: kw=38,165  overlap=6,984  outside=31,181  risk: high — procurement titles often mention health facilities without medical goods
+    Notice Title: kw=37,812  overlap=5,813  outside=31,999  risk: high — procurement titles often mention health facilities without medical goods
+    Award Title: kw=4,235  overlap=3,527  outside=708  risk: high — procurement titles often mention health facilities without medical goods
+  Recommendation:
+    (c) Conservative multi-field rule: keep UNSPSC Description OR
+    (Item Name / Item Description keyword match only when UNSPSC
+    Description is null/empty or does not match), to recover rows
+    with generic UNSPSC text. Validate with manual spot-checks on
+    match_outside_baseline.

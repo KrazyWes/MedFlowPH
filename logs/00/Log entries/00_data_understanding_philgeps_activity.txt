@@ -1,0 +1,81 @@
+[2026-04-24T17:12:58] Loaded April-June 2020.xlsx::Sheet1 year=2020 segment=2020_Q2 rows=163986 drift=MISMATCH
+[2026-04-24T17:12:59] Segment 2020_Q2 (2020/Q2): 163,986 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:13:00] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2020\Q2
+[2026-04-24T17:13:03] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2020\Q2\philgeps_raw_schema_table.csv
+[2026-04-24T17:15:11] Loaded July-September 2020.xlsx::Sheet1 year=2020 segment=2020_Q3 rows=200152 drift=MISMATCH
+[2026-04-24T17:15:11] Segment 2020_Q3 (2020/Q3): 200,152 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:15:13] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2020\Q3
+[2026-04-24T17:15:16] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2020\Q3\philgeps_raw_schema_table.csv
+[2026-04-24T17:15:36] Loaded 2021_Jan-Mar.csv year=2021 segment=2021_Q1 rows=456114 drift=OK
+[2026-04-24T17:15:36] Segment 2021_Q1 (2021/Q1): 456,114 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:15:38] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2021\Q1
+[2026-04-24T17:15:43] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2021\Q1\philgeps_raw_schema_table.csv
+[2026-04-24T17:16:35] Loaded 2021_Aprl-Jun.csv year=2021 segment=2021_Q2 rows=468622 drift=OK
+[2026-04-24T17:16:35] Segment 2021_Q2 (2021/Q2): 468,622 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:16:36] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2021\Q2
+[2026-04-24T17:16:43] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2021\Q2\philgeps_raw_schema_table.csv
+[2026-04-24T17:17:36] Loaded 2021_Jul-Sep.csv year=2021 segment=2021_Q3 rows=478311 drift=OK
+[2026-04-24T17:17:36] Segment 2021_Q3 (2021/Q3): 478,311 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:17:38] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2021\Q3
+[2026-04-24T17:17:43] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2021\Q3\philgeps_raw_schema_table.csv
+[2026-04-24T17:18:27] Loaded 2021_Oct-Dec.csv year=2021 segment=2021_Q4 rows=501644 drift=MISMATCH
+[2026-04-24T17:18:27] Segment 2021_Q4 (2021/Q4): 501,644 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:18:28] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2021\Q4
+[2026-04-24T17:18:28] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2021\Q4\philgeps_raw_schema_table.csv
+[2026-04-24T17:18:43] Loaded 2022_Apr-Jun.csv year=2022 segment=2022_Q2 rows=369554 drift=OK
+[2026-04-24T17:18:43] Segment 2022_Q2 (2022/Q2): 369,554 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:18:45] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2022\Q2
+[2026-04-24T17:18:50] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2022\Q2\philgeps_raw_schema_table.csv
+[2026-04-24T17:19:21] Loaded 2022 _Jul-Sep.csv year=2022 segment=2022_Q3 rows=428358 drift=OK
+[2026-04-24T17:19:21] Segment 2022_Q3 (2022/Q3): 428,358 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:19:22] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2022\Q3
+[2026-04-24T17:19:27] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2022\Q3\philgeps_raw_schema_table.csv
+[2026-04-24T17:20:02] Loaded 2022 _Oct-Dec.csv year=2022 segment=2022_Q4 rows=504833 drift=OK
+[2026-04-24T17:20:02] Segment 2022_Q4 (2022/Q4): 504,833 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:20:03] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2022\Q4
+[2026-04-24T17:20:09] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2022\Q4\philgeps_raw_schema_table.csv
+[2026-04-24T17:20:49] Loaded 2023_(JAN-MAR).csv year=2023 segment=2023_Q1 rows=405796 drift=OK
+[2026-04-24T17:20:49] Segment 2023_Q1 (2023/Q1): 405,796 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:20:51] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2023\Q1
+[2026-04-24T17:20:55] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2023\Q1\philgeps_raw_schema_table.csv
+[2026-04-24T17:21:29] Loaded 2023_(APR-JUN).csv year=2023 segment=2023_Q2 rows=436736 drift=OK
+[2026-04-24T17:21:29] Segment 2023_Q2 (2023/Q2): 436,736 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:21:31] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2023\Q2
+[2026-04-24T17:21:35] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2023\Q2\philgeps_raw_schema_table.csv
+[2026-04-24T17:22:11] Loaded 2023_(JUL-SEPT).csv year=2023 segment=2023_Q3 rows=450701 drift=OK
+[2026-04-24T17:22:11] Segment 2023_Q3 (2023/Q3): 450,701 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:22:13] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2023\Q3
+[2026-04-24T17:22:19] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2023\Q3\philgeps_raw_schema_table.csv
+[2026-04-24T17:23:06] Loaded 2023_(OCT-DEC).csv year=2023 segment=2023_Q4 rows=450311 drift=OK
+[2026-04-24T17:23:07] Segment 2023_Q4 (2023/Q4): 450,311 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:23:09] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2023\Q4
+[2026-04-24T17:23:15] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2023\Q4\philgeps_raw_schema_table.csv
+[2026-04-24T17:23:58] Loaded 2024_Jan-Mar.csv year=2024 segment=2024_Q1 rows=440342 drift=OK
+[2026-04-24T17:23:58] Segment 2024_Q1 (2024/Q1): 440,342 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:23:59] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2024\Q1
+[2026-04-24T17:24:04] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2024\Q1\philgeps_raw_schema_table.csv
+[2026-04-24T17:24:44] Loaded 2024_Apr-Jun.csv year=2024 segment=2024_Q2 rows=474381 drift=OK
+[2026-04-24T17:24:44] Segment 2024_Q2 (2024/Q2): 474,381 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:24:46] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2024\Q2
+[2026-04-24T17:24:51] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2024\Q2\philgeps_raw_schema_table.csv
+[2026-04-24T17:25:35] Loaded 2024_Jul-Sep.csv year=2024 segment=2024_Q3 rows=469108 drift=OK
+[2026-04-24T17:25:35] Segment 2024_Q3 (2024/Q3): 469,108 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:25:37] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2024\Q3
+[2026-04-24T17:25:42] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2024\Q3\philgeps_raw_schema_table.csv
+[2026-04-24T17:26:22] Loaded 2024_Oct-Dec.csv year=2024 segment=2024_Q4 rows=512719 drift=OK
+[2026-04-24T17:26:22] Segment 2024_Q4 (2024/Q4): 512,719 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:26:24] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2024\Q4
+[2026-04-24T17:26:30] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2024\Q4\philgeps_raw_schema_table.csv
+[2026-04-24T17:27:13] Loaded 2025_(JAN-MAR).csv year=2025 segment=2025_Q1 rows=469569 drift=OK
+[2026-04-24T17:27:13] Segment 2025_Q1 (2025/Q1): 469,569 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:27:15] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2025\Q1
+[2026-04-24T17:27:20] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2025\Q1\philgeps_raw_schema_table.csv
+[2026-04-24T17:27:58] Loaded 2025_(APR-JUN).csv year=2025 segment=2025_Q2 rows=372122 drift=OK
+[2026-04-24T17:27:58] Segment 2025_Q2 (2025/Q2): 372,122 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:27:59] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2025\Q2
+[2026-04-24T17:28:04] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2025\Q2\philgeps_raw_schema_table.csv
+[2026-04-24T17:28:35] Loaded 2025_(JUL-SEPT).csv year=2025 segment=2025_Q3 rows=361502 drift=OK
+[2026-04-24T17:28:35] Segment 2025_Q3 (2025/Q3): 361,502 rows in memory — EDA, schema, consolidated summary then release
+[2026-04-24T17:28:36] Wrote EDA -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Exploratory Data Analysis\2025\Q3
+[2026-04-24T17:28:40] Wrote schema CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Raw Dataset Schema\2025\Q3\philgeps_raw_schema_table.csv
+[2026-04-24T17:29:02] Wrote consolidated summary: c:\Users\loper\Desktop\version_4\MedFlowPH\results\00\Summaries\philgeps_understanding_summary.txt

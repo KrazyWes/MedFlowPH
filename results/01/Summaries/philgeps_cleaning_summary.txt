@@ -1,0 +1,214 @@
+PhilGEPS — merged medical procurement (after cleaning)
+Generated: 2026-04-24T20:52:20
+
+Medical filter (step 00 aligned): rows kept if UNSPSC Description OR Item Name OR Item Description
+matches MEDICAL_KEYWORDS (regex). Recovers rows with missing/generic UNSPSC when item text matches.
+
+--- Medical filter counts (summed over source files; pre within-file dedup) ---
+  input_rows: 8,414,861
+  output_rows: 811,484
+  unspsc_match: 615,250
+  item_name_match: 335,933
+  item_desc_match: 269,841
+  fallback_only_rows: 196,234
+
+--- Pipeline ---
+Total raw rows loaded (all files): 8,414,861
+After medical filter (sum over files, pre within-file dedup): 811,484
+After within-file dedup (sum of chunk sizes): 561,761
+After concat + cross-file drop_duplicates: 487,605
+Per-year EDA under: c:\Users\loper\Desktop\version_4\MedFlowPH\results\01\Exploratory Data Analysis/<year>/
+Merged EDA under: c:\Users\loper\Desktop\version_4\MedFlowPH\results\01\Exploratory Data Analysis\merged/
+
+Shape: 487,605 rows × 61 columns
+
+--- Column dtypes ---
+Procuring Entity                           object
+ Client Agency                             object
+Bid Reference No.                           int64
+Solicitation No.                           object
+Notice Title                               object
+Notice Type                                object
+Classification                             object
+Procurement Mode                           object
+Business Category                          object
+Funding Source                             object
+Funding Instrument                         object
+Trade Agreement                            object
+Approved Budget of the Contract            object
+Published Date                             object
+Closing Date                               object
+PreBid Date                        datetime64[ns]
+Area of Delivery                           object
+Contract Duration                         float64
+Calendar Type                              object
+Line Item No                              float64
+Item Name                                  object
+Item Description                           object
+Quantity                                  float64
+UOM                                        object
+Item Budget                               float64
+Notice Status                              object
+Created By                                 object
+Award No.                                   int64
+Award Title                                object
+Award Type                                 object
+UNSPSC Code                               float64
+UNSPSC Description                         object
+Published Date(Award)                      object
+Award Date                                 object
+Notice to Proceed Date                     object
+Contract No                                object
+Contract Amount                           float64
+Contract Efectivity Date           datetime64[ns]
+Contract End Date                          object
+Award Status                               object
+Reason for Award                           object
+Awardee Organization Name                  object
+Awardee Contact Person                     object
+Year                                        int64
+Procuring Entity (PE)                      object
+Region                                     object
+Province                                   object
+City/Municipality                          object
+Government Branch                          object
+PE Organization Type                       object
+PE Organization Type (Grouped)             object
+Bid Notice Status                          object
+Award Reference No.                        object
+Award Notice Status                        object
+Contract Effectivity Date                  object
+Country of Awardee                         object
+Region of Awardee                          object
+Province of Awardee                        object
+City/Municipality of Awardee               object
+Awardee Size                               object
+Awardee Joint Venture                      object
+
+--- Null counts per column ---
+Procuring Entity                   0
+UNSPSC Description                 0
+Award Date                         0
+Notice to Proceed Date             0
+Contract No                        0
+Contract Amount                    0
+Contract Efectivity Date           0
+Contract End Date                  0
+Award Status                       0
+Reason for Award                   0
+Awardee Organization Name          0
+Awardee Contact Person             0
+Year                               0
+Procuring Entity (PE)              0
+Region                             0
+Province                           0
+City/Municipality                  0
+Government Branch                  0
+PE Organization Type               0
+PE Organization Type (Grouped)     0
+Bid Notice Status                  0
+Award Reference No.                0
+Award Notice Status                0
+Contract Effectivity Date          0
+Country of Awardee                 0
+Region of Awardee                  0
+Province of Awardee                0
+City/Municipality of Awardee       0
+Awardee Size                       0
+Published Date(Award)              0
+UNSPSC Code                        0
+ Client Agency                     0
+Award Type                         0
+Bid Reference No.                  0
+Solicitation No.                   0
+Notice Title                       0
+Notice Type                        0
+Classification                     0
+Procurement Mode                   0
+Business Category                  0
+Funding Source                     0
+Funding Instrument                 0
+Trade Agreement                    0
+Approved Budget of the Contract    0
+Published Date                     0
+Closing Date                       0
+PreBid Date                        0
+Area of Delivery                   0
+Contract Duration                  0
+Calendar Type                      0
+Line Item No                       0
+Item Name                          0
+Item Description                   0
+Quantity                           0
+UOM                                0
+Item Budget                        0
+Notice Status                      0
+Created By                         0
+Award No.                          0
+Award Title                        0
+Awardee Joint Venture              0
+
+--- Numeric describe ---
+       Bid Reference No.  Contract Duration   Line Item No      Quantity   Item Budget     Award No.   UNSPSC Code  Contract Amount           Year
+count       4.876050e+05      487605.000000  487605.000000  4.876050e+05  4.876050e+05  4.876050e+05  4.876050e+05     4.876050e+05  487605.000000
+mean        9.581270e+06          20.991296      23.295784  7.502813e+03  1.357384e+06  2.902568e+06  4.642628e+07     1.144070e+06    2022.991473
+std         2.882121e+06          54.830824      61.464567  1.457475e+06  1.448100e+07  3.398548e+04  1.109821e+07     1.292674e+07       1.381506
+min         0.000000e+00           0.000000       1.000000  0.000000e+00 -1.000000e+00  5.075040e+05  1.000000e+07     0.000000e+00    2020.000000
+25%         9.145696e+06           1.000000       1.000000  1.000000e+00  1.620000e+04  2.905551e+06  4.200000e+07     5.394100e+04    2022.000000
+50%         1.027496e+07          15.000000       2.000000  3.000000e+00  1.050000e+05  2.905551e+06  4.200000e+07     1.314860e+05    2023.000000
+75%         1.133917e+07          30.000000      15.000000  1.000000e+02  4.602500e+05  2.905551e+06  5.100000e+07     3.355580e+05    2024.000000
+max         1.244117e+07        7321.000000    1326.000000  1.000000e+09  3.300000e+09  4.387145e+06  9.514190e+07     3.299900e+09    2025.000000
+
+--- Value counts (top 10): Procurement Mode ---
+Procurement Mode
+Public Bidding                                                           245757
+Negotiated Procurement - Small Value Procurement (Sec. 53.9)             170850
+Shopping - Ordinary/Regular Office Supplies & Equipment (Sec. 52.1.b)     25683
+Negotiated Procurement - Emergency Cases (Sec. 53.2)                      17491
+Direct Contracting (Sec. 50)                                               9289
+Negotiated Procurement - Two Failed Biddings (Sec. 53.1)                   8569
+Shopping                                                                   3014
+Negotiated Procurement - Lease of Real Property (Sec. 53.10)               2054
+Negotiated Procurement - Agency to Agency (Sec. 53.5)                      1736
+Shopping - Unforeseen Contingency (Sec. 52.1.a)                            1204
+
+--- Value counts (top 10): Region ---
+Region
+NCR            122876
+Region III      53311
+Region VI       35646
+Region IV-A     32797
+Region V        32034
+Region VII      31886
+Region VIII     24250
+Region I        23034
+Region XI       20122
+CAR             18390
+
+--- Value counts (top 10): PE Organization Type ---
+PE Organization Type
+Hospital                                          189317
+Municipal Government                               65104
+Provincial Government                              59320
+Department                                         37472
+City Government                                    35474
+State Universities or Colleges (SUC)               32495
+Government Owned and/or Controlled Corp.(GOCC)     26757
+Attached Agency                                    20804
+Barangay                                            8061
+Bureau                                              7197
+
+--- Value counts (top 10): Awardee Size ---
+Awardee Size
+Micro     384053
+Medium     58490
+Large      45058
+Small          4
+
+--- Value counts (top 10): Funding Source ---
+Funding Source
+Government of the Philippines (GOP)                483647
+Others                                               3176
+Asian Development Bank (ADB)                          582
+World Bank (WB)                                       166
+Japan Bank for International Cooperation (JBIC)        34
