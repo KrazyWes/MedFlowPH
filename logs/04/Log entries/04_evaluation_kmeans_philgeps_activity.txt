@@ -1,0 +1,9 @@
+[2026-04-28T08:27:54] Imported step03 from C:\Users\loper\Desktop\version_4\MedFlowPH\source_code\PhilGEPS\03_kmeans_implementation_philgeps.py
+[2026-04-28T08:27:55] Loaded silhouette map for K=[2, 3, 4, 5, 6, 7, 8, 9, 10] from CSV
+[2026-04-28T08:27:55] Reading preprocessed matrix: C:\Users\loper\Desktop\version_4\MedFlowPH\output_source\02\philgeps_preprocessed.csv
+[2026-04-28T08:28:41] Loaded 487,605 rows × 312 columns
+[2026-04-28T08:28:44] Dummy support filter [0.02, 0.98]: kept=88/293, dropped=205
+[2026-04-28T08:28:45] Prepared matrix shape=(487605, 107)
+[2026-04-28T08:28:46] StandardScaler fit on 487,605 rows × 107 columns; post-scale mean=6.177e-10, std mean=1.000
+[2026-04-28T08:28:59] PCA fit (probe=106 components): n_full=43 explains 0.8071 of variance (target 80%); first 3 PCs explain 0.1524 (3D-view).
+[2026-04-28T08:29:40] Saved grid -> C:\Users\loper\Desktop\version_4\MedFlowPH\results\04\01_kmeans_candidates_pca_3d_grid.png

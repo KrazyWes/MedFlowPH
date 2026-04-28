@@ -1,0 +1,24 @@
+[2026-04-27T18:32:57] Reading cleaned step-01 CSV: c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\01\philgeps_medical_procurement.csv
+[2026-04-27T18:33:10] Loaded 487,605 rows × 41 kept columns
+[2026-04-27T18:33:10] Layer A: feature engineering
+[2026-04-27T18:33:19] VALIDATION WARNING: Money column 'Item Budget': 15,406 negative values (will be clipped to 0)
+[2026-04-27T18:33:19] Money 'Item Budget': clipped 15,406 negative values to 0
+[2026-04-27T18:33:19] Effectivity merge: both_present=487,605, disagreeing=487,605
+[2026-04-27T18:34:23] Wrote Layer A CSV -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\02\Feature Selection\philgeps_features_selected.csv (shape=(487605, 43))
+[2026-04-27T18:34:23] Wrote engineering diag -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\02\Feature Selection\engineering_diag.json
+[2026-04-27T18:34:23] Layer B: one-hot encoding (pure-blocks split)
+[2026-04-27T18:34:23] Freq-encoded 'City/Municipality' -> City_Municipality_freq
+[2026-04-27T18:34:23] Freq-encoded 'City/Municipality of Awardee' -> City_Municipality_of_Awardee_freq
+[2026-04-27T18:34:23] Top-K 'Province': K=25 kept-levels coverage=76.0% -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\02\One-Hot Encoding\topk_Province.csv
+[2026-04-27T18:34:23] Top-K 'Province of Awardee': K=25 kept-levels coverage=92.1% -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\02\One-Hot Encoding\topk_Province_of_Awardee.csv
+[2026-04-27T18:34:24] Top-K 'Area of Delivery': K=25 kept-levels coverage=73.7% -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\02\One-Hot Encoding\topk_Area_of_Delivery.csv
+[2026-04-27T18:34:24] Top-K 'UOM': K=20 kept-levels coverage=98.4% -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\02\One-Hot Encoding\topk_UOM.csv
+[2026-04-27T18:34:24] Top-K 'Business Category': K=30 kept-levels coverage=96.3% -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\02\One-Hot Encoding\topk_Business_Category.csv
+[2026-04-27T18:34:29] OHE split: dummies=(487605, 293), numerics=(487605, 19), sources_encoded=24
+[2026-04-27T18:35:16] Wrote Layer B CSV (dummies only) -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\02\One-Hot Encoding\philgeps_one_hot.csv (shape=(487605, 293))
+[2026-04-27T18:35:16] Layer C: min-max scaling (numerics only)
+[2026-04-27T18:35:17] Min-Max: scaled 19 numeric columns to [0, 1]
+[2026-04-27T18:35:52] Wrote Layer C CSV (scaled numerics only) -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\02\Min-Max Scaling\philgeps_min_max_scaled.csv (shape=(487605, 19))
+[2026-04-27T18:35:52] Wrote scaler params -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\02\Min-Max Scaling\scaler_params.json
+[2026-04-27T18:35:52] Merging dummies + scaled numerics into final preprocessed matrix
+[2026-04-27T18:37:09] Wrote final merged CSV -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\02\philgeps_preprocessed.csv (shape=(487605, 312))

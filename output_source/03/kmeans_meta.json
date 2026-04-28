@@ -1,0 +1,61 @@
+{
+  "mode": {
+    "CLUSTER_ON_PCA": true,
+    "MIN_DUMMY_SUPPORT": 0.0,
+    "MAX_DUMMY_SUPPORT": 0.98,
+    "PCA_FULL_VARIANCE_TARGET": 0.8,
+    "MAX_PCA_COMPONENTS": 150,
+    "PCA_N_VIEW_COMPONENTS": 3
+  },
+  "best_k": 3,
+  "k_selection_rule": "composite(sil_norm+ch_norm+db_sep_norm)",
+  "best_composite_score": 1.0,
+  "best_silhouette_at_selected_k": 0.1838234156370163,
+  "k_argmax_silhouette_alone": 3,
+  "k_range": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "n_rows": 487605,
+  "n_features_input": 312,
+  "n_features_kept": 307,
+  "n_dummies_dropped": 5,
+  "pca_n_components_full": 150,
+  "pca_cumulative_variance_full": 0.7497255206108093,
+  "pca_view_explained_variance_ratio": [
+    0.02555263787508011,
+    0.017556238919496536,
+    0.014434559270739555
+  ],
+  "pca_view_cumulative_variance": 0.0575434360653162,
+  "cluster_space_dim": 150,
+  "random_seed": 42,
+  "k_sweep_fit_max_rows": 50000,
+  "k_sweep_fit_rows": 50000,
+  "k_sweep_used_fit_subsample": true,
+  "metric_sample_size": 20000,
+  "silhouette_sample_size_cap": 20000,
+  "silhouette_n_resamples": 5,
+  "scatter_subsample_for_plot": 30000,
+  "k_sweep_kmeans": {
+    "algorithm": "lloyd",
+    "init": "k-means++",
+    "n_init": 10,
+    "max_iter": 300
+  },
+  "final_kmeans": {
+    "n_init": 10,
+    "max_iter": 300,
+    "inertia": 107678432.0,
+    "n_iter": 18
+  },
+  "runtime_seconds": 963.64,
+  "input_csv": "c:\\Users\\loper\\Desktop\\version_4\\MedFlowPH\\output_source\\02\\philgeps_preprocessed.csv"
+}

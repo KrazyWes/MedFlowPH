@@ -1,0 +1,66 @@
+PhilGEPS step 03 — cluster interpretation summary
+Generated: 2026-04-28T15:47:03
+K = 3, total n = 487,605
+
+Heuristic descriptors are derived from z-scored numeric centroids and top dummy lift.
+Replace bracketed names with human-readable labels after review.
+
+--- Cluster 0 (n=181,598, share=37.2%) ---
+  proposed name: [near-global-average profile; top dummy: Region_of_Awardee_Region IV-B (lift=2.67, p=0.03)]
+  numeric centroid (z-score vs global, top movers):
+    award_decision_lag_days                  -0.348σ
+    log1p_Approved_Budget_of_the_Contract    -0.272σ
+    log1p_Quantity                           -0.251σ
+    Year                                     +0.146σ
+    contract_effectivity_lag_days            -0.146σ
+  top dummies by lift:
+    lift=  2.67  p=0.034  global=0.013  Region_of_Awardee_Region IV-B
+    lift=  2.67  p=0.026  global=0.010  Region_of_Awardee_Region XII
+    lift=  2.57  p=0.040  global=0.016  Region_of_Awardee_Region II
+    lift=  2.56  p=0.203  global=0.079  Province_of_Awardee_Other
+    lift=  2.56  p=0.035  global=0.014  Region_of_Awardee_CAR
+    lift=  2.56  p=0.054  global=0.021  Region_of_Awardee_Region VIII
+    lift=  2.55  p=0.027  global=0.011  Province_of_Awardee_Benguet
+    lift=  2.54  p=0.022  global=0.009  Region_of_Awardee_Negros Island Region
+    lift=  2.53  p=0.042  global=0.017  Province_of_Awardee_Leyte
+    lift=  2.52  p=0.062  global=0.025  Region_of_Awardee_Region I
+
+--- Cluster 1 (n=118,894, share=24.4%) ---
+  proposed name: [low Year (-0.6σ); top dummy: Procurement_Mode_Shopping (lift=4.10, p=0.03)]
+  numeric centroid (z-score vs global, top movers):
+    Year                                     -0.561σ
+    pub_year                                 -0.551σ
+    pub_epoch_days                           -0.529σ
+    contract_effectivity_lag_days            +0.452σ
+    award_publish_lag_days                   +0.388σ
+  top dummies by lift:
+    lift=  4.10  p=0.025  global=0.006  Procurement_Mode_Shopping
+    lift=  4.10  p=0.096  global=0.023  Notice_Type_Request for Quotation (RFQ)
+    lift=  4.10  p=0.052  global=0.013  Award_Status_Posted
+    lift=  4.10  p=0.051  global=0.012  Award_Type_Award Notice (Negotiated Procurement - Emergency C
+    lift=  4.10  p=0.103  global=0.025  Notice_Status_Closed
+    lift=  3.96  p=0.997  global=0.252  Province_Metro Manila
+    lift=  3.96  p=0.997  global=0.252  Region_NCR
+    lift=  3.22  p=0.775  global=0.240  Area_of_Delivery_Metro Manila
+    lift=  2.86  p=0.103  global=0.036  Procurement_Mode_Negotiated Procurement - Emergency Cases (Sec. 53.2)
+    lift=  2.01  p=0.160  global=0.080  Funding_Instrument_Corporate Budget for the Contract Approved by the Board
+
+--- Cluster 2 (n=187,113, share=38.4%) ---
+  proposed name: [near-global-average profile; top dummy: Bid_Notice_Status_Cancelled (lift=2.37, p=0.02)]
+  numeric centroid (z-score vs global, top movers):
+    contract_length_days                     +0.320σ
+    ntp_lag_days                             -0.238σ
+    log1p_Approved_Budget_of_the_Contract    +0.231σ
+    pub_year                                 +0.226σ
+    pub_epoch_days                           +0.225σ
+  top dummies by lift:
+    lift=  2.37  p=0.023  global=0.010  Bid_Notice_Status_Cancelled
+    lift=  2.32  p=0.144  global=0.062  Province_Bataan
+    lift=  2.20  p=0.144  global=0.066  Area_of_Delivery_Bataan
+    lift=  2.12  p=0.056  global=0.027  Province_Camarines Sur
+    lift=  2.08  p=0.022  global=0.011  Bid_Notice_Status_Failed
+    lift=  1.99  p=0.029  global=0.015  Province_Surigao Del Norte
+    lift=  1.98  p=0.708  global=0.358  Bid_Notice_Status_Closed
+    lift=  1.95  p=0.063  global=0.033  Funding_Instrument_National Expenditure Program (NEP) for the suceeding year - Single Year
+    lift=  1.92  p=0.055  global=0.029  Area_of_Delivery_Camarines Sur
+    lift=  1.92  p=0.029  global=0.015  Area_of_Delivery_Surigao Del Norte

@@ -1,0 +1,1 @@
+PhilGEPS step 03 done. K*=3 (sil@K=0.1838, composite=1.0000); cluster_space_dim=150; clusters: c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\philgeps_clusters.csv; results: c:\Users\loper\Desktop\version_4\MedFlowPH\results\03; logs: c:\Users\loper\Desktop\version_4\MedFlowPH\logs\03

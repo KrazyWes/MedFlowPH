@@ -1,0 +1,1 @@
+PhilGEPS step 04 done. Grid: C:\Users\loper\Desktop\version_4\MedFlowPH\results\04\01_kmeans_candidates_pca_3d_grid.png; README: C:\Users\loper\Desktop\version_4\MedFlowPH\results\04\README.txt; runtime=108.3s

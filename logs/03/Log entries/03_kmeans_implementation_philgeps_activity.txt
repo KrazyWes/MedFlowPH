@@ -1,0 +1,30 @@
+[2026-04-28T15:30:08] Mode: CLUSTER_ON_PCA=True, MIN_DUMMY_SUPPORT=0.0, PCA_FULL_VARIANCE_TARGET=0.8, MAX_PCA_COMPONENTS=150
+[2026-04-28T15:30:08] Reading preprocessed matrix: c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\02\philgeps_preprocessed.csv
+[2026-04-28T15:30:43] Loaded 487,605 rows × 312 columns
+[2026-04-28T15:30:45] Block split: numeric=19, dummies=293
+[2026-04-28T15:30:46] Dummy support filter [0.0, 0.98]: kept=288/293, dropped=5
+[2026-04-28T15:30:49] Variance audit (pre-standardize): n_numeric=19, n_dummies=288, numeric_block_share=0.116, dummy_block_share=0.884
+[2026-04-28T15:30:56] StandardScaler fit on 487,605 rows × 307 columns; post-scale mean=-1.587e-09, std mean=1.000
+[2026-04-28T15:31:18] PCA fit (probe=150 components): n_full=150 explains 0.7497 of variance (target 80%); first 3 PCs explain 0.0575 (3D-view).
+[2026-04-28T15:31:21] Wrote PCA artifacts -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\pca_full_components.csv, c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\pca_components.csv, c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\pca_full_explained_variance.json, c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\pca_explained_variance.json
+[2026-04-28T15:31:22] Clustering on PCA-reduced matrix: shape=(487605, 150)
+[2026-04-28T15:31:22] K sweep: fitting on fixed subsample n=50,000/487,605 (seed=42); final fit still uses full data.
+[2026-04-28T15:32:38] K=2: silhouette=0.1795±0.0108, CH=576.5, DB=2.7714, inertia=10124468.0, fit=5.9s
+[2026-04-28T15:34:41] K=3: silhouette=0.1838±0.0066, CH=628.7, DB=2.4231, inertia=9958092.0, fit=5.0s
+[2026-04-28T15:36:27] K=4: silhouette=0.0674±0.0017, CH=552.3, DB=4.4102, inertia=9734339.0, fit=5.9s
+[2026-04-28T15:38:10] K=5: silhouette=-0.0283±0.0010, CH=393.7, DB=3.7425, inertia=9661179.0, fit=6.9s
+[2026-04-28T15:39:54] K=6: silhouette=0.0561±0.0011, CH=361.1, DB=3.4892, inertia=9538736.0, fit=8.2s
+[2026-04-28T15:41:34] K=7: silhouette=0.0306±0.0008, CH=428.9, DB=3.3967, inertia=9375627.0, fit=8.2s
+[2026-04-28T15:42:50] K=8: silhouette=0.0017±0.0016, CH=434.5, DB=3.5313, inertia=9195228.0, fit=9.5s
+[2026-04-28T15:43:59] K=9: silhouette=0.0134±0.0007, CH=406.8, DB=3.2546, inertia=9109190.0, fit=7.4s
+[2026-04-28T15:45:13] K=10: silhouette=0.0330±0.0012, CH=395.6, DB=3.1114, inertia=8951824.0, fit=7.4s
+[2026-04-28T15:45:13] Selected K=3 via composite(sil_norm+ch_norm+db_sep_norm): silhouette_mean=0.1838, composite_score=1.0000. (Silhouette-only argmax would be K=3.)
+[2026-04-28T15:45:39] Final KMeans(K=3) fit in 24.3s, inertia=107678432.0, n_iter=18
+[2026-04-28T15:46:08] Wrote K-by-k PCA 2D grid -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\03\PCA Scatter\04_clustering_results_by_k_pca2d.png
+[2026-04-28T15:46:11] Wrote clusters -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\philgeps_clusters.csv; centroids -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\centroids_original_space.csv, c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\centroids_pca_space.csv, c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\centroids_pca_full_space.csv; meta -> c:\Users\loper\Desktop\version_4\MedFlowPH\output_source\03\kmeans_meta.json
+[2026-04-28T15:46:16] Wrote per-cluster 3D scatter -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\03\PCA Scatter per Cluster\cluster_0_pca_3d.png
+[2026-04-28T15:46:18] Wrote per-cluster 3D scatter -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\03\PCA Scatter per Cluster\cluster_1_pca_3d.png
+[2026-04-28T15:46:20] Wrote per-cluster 3D scatter -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\03\PCA Scatter per Cluster\cluster_2_pca_3d.png
+[2026-04-28T15:46:20] Wrote PCA 3D scatter set -> c:\Users\loper\Desktop\version_4\MedFlowPH\results\03\PCA Scatter and c:\Users\loper\Desktop\version_4\MedFlowPH\results\03\PCA Scatter per Cluster
+[2026-04-28T15:46:26] Loaded engineered numerics for interpretation: shape=(487605, 17)
+[2026-04-28T15:47:03] Step 03 complete in 1015.0s

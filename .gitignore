@@ -6,33 +6,19 @@ __pycache__/
 *.egg-info/
 .eggs/
 
+# Tabular/spreadsheet data (not in repo)
+*.csv
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+
+# Local scratch
+_tmp*.txt
+
+# Word/Office transient lock files
+~$*
+
 # Editor / OS
 .DS_Store
 Thumbs.db
-
-
-# BEGIN LARGE FILE SKIPS (auto prep_git_push.py)
-
-/output_source/01/philgeps_medical_procurement.csv
-/raw_datasets/PhilGEPS/2024/2024_Oct-Dec.csv
-/raw_datasets/PhilGEPS/2021/2021_Oct-Dec.csv
-/raw_datasets/PhilGEPS/2022/2022 _Oct-Dec.csv
-/raw_datasets/PhilGEPS/2021/2021_Jul-Sep.csv
-/raw_datasets/PhilGEPS/2021/2021_Aprl-Jun.csv
-/raw_datasets/PhilGEPS/2024/2024_Apr-Jun.csv
-/raw_datasets/PhilGEPS/2024/2024_Jul-Sep.csv
-/raw_datasets/PhilGEPS/2021/2021_Jan-Mar.csv
-/raw_datasets/PhilGEPS/2025/2025_(JAN-MAR).csv
-/raw_datasets/PhilGEPS/2023/2023_(OCT-DEC).csv
-/raw_datasets/PhilGEPS/2023/2023_(JUL-SEPT).csv
-/raw_datasets/PhilGEPS/2024/2024_Jan-Mar.csv
-/raw_datasets/PhilGEPS/2023/2023_(APR-JUN).csv
-/raw_datasets/PhilGEPS/2022/2022 _Jul-Sep.csv
-/raw_datasets/PhilGEPS/2023/2023_(JAN-MAR).csv
-/raw_datasets/PhilGEPS/2025/2025_(APR-JUN).csv
-/raw_datasets/PhilGEPS/2022/2022_Apr-Jun.csv
-/raw_datasets/PhilGEPS/2025/2025_(JUL-SEPT).csv
-/output_source/01/PhilGEPS-yearly/philgeps_2024_medical_procurement.csv
-/output_source/01/PhilGEPS-yearly/philgeps_2023_medical_procurement.csv
-
-# END LARGE FILE SKIPS

@@ -1,0 +1,45 @@
+PhilGEPS step 02 — feature-selection cardinality (rows=487,605)
+                               column   dtype  n_non_null  n_null  n_unique  null_pct
+                log1p_Contract_Amount float64      487605       0    139613       0.0
+                    log1p_Item_Budget float64      487605       0    120690       0.0
+log1p_Approved_Budget_of_the_Contract float64      487605       0    101424       0.0
+               award_publish_lag_days float64      487605       0     15230       0.0
+                       log1p_Quantity float64      487605       0      7188       0.0
+                   time_to_close_days float64      487605       0      5820       0.0
+                       pub_epoch_days float64      487605       0      5147       0.0
+              award_decision_lag_days float64      487605       0      4078       0.0
+                 contract_length_days float64      487605       0      2356       0.0
+                         ntp_lag_days float64      487605       0      1810       0.0
+                     prebid_lead_days float64      487605       0      1442       0.0
+        contract_effectivity_lag_days float64      487605       0       759       0.0
+               contract_duration_days float64      487605       0       455       0.0
+                            pub_month   int64      487605       0        12       0.0
+                              pub_dow   int64      487605       0         7       0.0
+                                 Year   int64      487605       0         6       0.0
+                             pub_year   int64      487605       0         6       0.0
+                    City/Municipality     str      487605       0      1165       0.0
+         City/Municipality of Awardee     str      487605       0      1018       0.0
+                    Business Category     str      487605       0       163       0.0
+                     Area of Delivery     str      487605       0        86       0.0
+                             Province     str      487605       0        83       0.0
+                  Province of Awardee     str      487605       0        83       0.0
+                                  UOM     str      487605       0        54       0.0
+                        Client Agency     str      487605       0        50       0.0
+                     Procurement Mode     str      487605       0        22       0.0
+                               Region     str      487605       0        18       0.0
+                    Region of Awardee     str      487605       0        18       0.0
+                           Award Type     str      487605       0        10       0.0
+                   Country of Awardee     str      487605       0        10       0.0
+                      Trade Agreement     str      487605       0         7       0.0
+                          Notice Type     str      487605       0         6       0.0
+                   Funding Instrument     str      487605       0         6       0.0
+                    Bid Notice Status     str      487605       0         6       0.0
+                       Funding Source     str      487605       0         5       0.0
+                        Notice Status     str      487605       0         5       0.0
+                       Classification     str      487605       0         4       0.0
+       PE Organization Type (Grouped)     str      487605       0         4       0.0
+                         Awardee Size     str      487605       0         4       0.0
+                        Calendar Type     str      487605       0         3       0.0
+                         Award Status     str      487605       0         3       0.0
+                    Government Branch     str      487605       0         3       0.0
+                  Award Notice Status     str      487605       0         3       0.0
