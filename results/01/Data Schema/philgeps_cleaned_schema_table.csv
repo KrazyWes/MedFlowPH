@@ -1,0 +1,62 @@
+canonical_position,column_name,in_canonical_46,pandas_dtype,row_count,null_count,null_pct,non_null_count,nunique_non_null
+1,Procuring Entity,False,object,487605,0,0.0,487605,2153
+2, Client Agency,False,object,487605,0,0.0,487605,50
+3,Bid Reference No.,True,int64,487605,0,0.0,487605,199776
+4,Solicitation No.,False,object,487605,0,0.0,487605,16016
+5,Notice Title,True,object,487605,0,0.0,487605,183496
+6,Notice Type,False,object,487605,0,0.0,487605,6
+7,Classification,True,object,487605,0,0.0,487605,4
+8,Procurement Mode,True,object,487605,0,0.0,487605,22
+9,Business Category,True,object,487605,0,0.0,487605,163
+10,Funding Source,True,object,487605,0,0.0,487605,5
+11,Funding Instrument,True,object,487605,0,0.0,487605,6
+12,Trade Agreement,True,object,487605,0,0.0,487605,7
+13,Approved Budget of the Contract,True,object,487605,0,0.0,487605,101424
+14,Published Date,True,object,487605,0,0.0,487605,5147
+15,Closing Date,True,object,487605,0,0.0,487605,2671
+16,PreBid Date,False,datetime64[ns],487605,0,0.0,487605,781
+17,Area of Delivery,True,object,487605,0,0.0,487605,86
+18,Contract Duration,True,float64,487605,0,0.0,487605,448
+19,Calendar Type,True,object,487605,0,0.0,487605,3
+20,Line Item No,True,float64,487605,0,0.0,487605,848
+21,Item Name,True,object,487605,0,0.0,487605,180182
+22,Item Description,True,object,487605,0,0.0,487605,272655
+23,Quantity,True,float64,487605,0,0.0,487605,7188
+24,UOM,True,object,487605,0,0.0,487605,54
+25,Item Budget,True,float64,487605,0,0.0,487605,120691
+26,Notice Status,False,object,487605,0,0.0,487605,5
+27,Created By,False,object,487605,0,0.0,487605,2282
+28,Award No.,False,int64,487605,0,0.0,487605,23819
+29,Award Title,True,object,487605,0,0.0,487605,168701
+30,Award Type,False,object,487605,0,0.0,487605,10
+31,UNSPSC Code,True,float64,487605,0,0.0,487605,3777
+32,UNSPSC Description,True,object,487605,0,0.0,487605,3777
+33,Published Date(Award),True,object,487605,0,0.0,487605,25083
+34,Award Date,True,object,487605,0,0.0,487605,2206
+35,Notice to Proceed Date,True,object,487605,0,0.0,487605,2273
+36,Contract No,False,object,487605,0,0.0,487605,13203
+37,Contract Amount,True,float64,487605,0,0.0,487605,139613
+38,Contract Efectivity Date,False,datetime64[ns],487605,0,0.0,487605,837
+39,Contract End Date,True,object,487605,0,0.0,487605,3075
+40,Award Status,False,object,487605,0,0.0,487605,3
+41,Reason for Award,False,object,487605,0,0.0,487605,2554
+42,Awardee Organization Name,True,object,487605,0,0.0,487605,19784
+43,Awardee Contact Person,False,object,487605,0,0.0,487605,4100
+44,Year,True,int64,487605,0,0.0,487605,6
+45,Procuring Entity (PE),True,object,487605,0,0.0,487605,6883
+46,Region,True,object,487605,0,0.0,487605,18
+47,Province,True,object,487605,0,0.0,487605,83
+48,City/Municipality,True,object,487605,0,0.0,487605,1165
+49,Government Branch,True,object,487605,0,0.0,487605,3
+50,PE Organization Type,True,object,487605,0,0.0,487605,14
+51,PE Organization Type (Grouped),True,object,487605,0,0.0,487605,4
+52,Bid Notice Status,True,object,487605,0,0.0,487605,6
+53,Award Reference No.,True,object,487605,0,0.0,487605,317213
+54,Award Notice Status,True,object,487605,0,0.0,487605,3
+55,Contract Effectivity Date,True,object,487605,0,0.0,487605,1526
+56,Country of Awardee,True,object,487605,0,0.0,487605,10
+57,Region of Awardee,True,object,487605,0,0.0,487605,18
+58,Province of Awardee,True,object,487605,0,0.0,487605,83
+59,City/Municipality of Awardee,True,object,487605,0,0.0,487605,1018
+60,Awardee Size,True,object,487605,0,0.0,487605,4
+61,Awardee Joint Venture,True,object,487605,0,0.0,487605,844

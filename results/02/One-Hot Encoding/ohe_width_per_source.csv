@@ -1,0 +1,27 @@
+source,policy,new_columns
+City/Municipality,frequency,1
+City/Municipality of Awardee,frequency,1
+Award Notice Status,one_hot_drop_first,2
+Award Status,one_hot_drop_first,2
+Award Type,one_hot_drop_first,9
+Awardee Size,one_hot_drop_first,3
+Bid Notice Status,one_hot_drop_first,5
+Calendar Type,one_hot_drop_first,2
+Classification,one_hot_drop_first,3
+Client Agency,one_hot_drop_first,49
+Country of Awardee,one_hot_drop_first,9
+Funding Instrument,one_hot_drop_first,5
+Funding Source,one_hot_drop_first,4
+Government Branch,one_hot_drop_first,2
+Notice Status,one_hot_drop_first,4
+Notice Type,one_hot_drop_first,5
+PE Organization Type (Grouped),one_hot_drop_first,3
+Procurement Mode,one_hot_drop_first,21
+Region,one_hot_drop_first,17
+Region of Awardee,one_hot_drop_first,17
+Trade Agreement,one_hot_drop_first,6
+UOM,top_20_plus_other,20
+Area of Delivery,top_25_plus_other,25
+Province,top_25_plus_other,25
+Province of Awardee,top_25_plus_other,25
+Business Category,top_30_plus_other,30

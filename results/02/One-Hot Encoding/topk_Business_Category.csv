@@ -1,0 +1,164 @@
+level,count,kept,coverage_rows,top_k
+Medical Supplies and Laboratory Instrument,162936,True,469690,30
+Drugs and Medicines,128546,True,469690,30
+Laboratory Supplies and Equipment,77843,True,469690,30
+Medical and Dental Equipment,17983,True,469690,30
+Hospital / Medical Equipment,14920,True,469690,30
+Construction Projects,12874,True,469690,30
+General Merchandise,8435,True,469690,30
+Catering Services,3967,True,469690,30
+Services,3834,True,469690,30
+Veterinary Products and Supplies,3372,True,469690,30
+General Repair and Maintenance Services,2890,True,469690,30
+Hospital / Medical Equipment Services,2798,True,469690,30
+Chemicals and Chemical Products,2612,True,469690,30
+Office Supplies and Devices,2513,True,469690,30
+Construction Materials and Supplies,2433,True,469690,30
+Food Stuff,2293,True,469690,30
+Hotel and Lodging and Meeting Facilities,2100,True,469690,30
+Diagnostic and Laboratory Services,2019,True,469690,30
+Office Equipment Supplies and Consumables,1978,True,469690,30
+Office Equipment,1542,True,469690,30
+"Books, Maps and Other Publications",1532,True,469690,30
+General Contractor,1481,True,469690,30
+Educational Materials and Supplies,1471,True,469690,30
+Information Technology,1342,True,469690,30
+Printing Services,1251,True,469690,30
+Consulting Services,1240,True,469690,30
+Janitorial Supplies,988,True,469690,30
+Hardware and Construction Supplies,868,True,469690,30
+Environmental Health/Safety Equipment,848,True,469690,30
+"Travel, Food, Lodging and Entertainment Services",781,True,469690,30
+Lease and Rental of Property or Building,763,False,469690,30
+Safety and Occupational Products,709,False,469690,30
+Furniture,704,False,469690,30
+Engineering and Laboratory Testing Equipment,674,False,469690,30
+Grocery Items,617,False,469690,30
+Airconditioning and Airconditioning Systems,556,False,469690,30
+Fuels/Fuel Additives & Lubricants & Anti Corrosive,529,False,469690,30
+Garments,528,False,469690,30
+Kitchenware,526,False,469690,30
+Vehicles,521,False,469690,30
+Electrical Supplies,496,False,469690,30
+Information Technology Parts & Accessories & Perip,487,False,469690,30
+Fire Fighting & Rescue and Safety Equipment,457,False,469690,30
+Personal Care Products,428,False,469690,30
+Animal Feeds,396,False,469690,30
+Appliances,390,False,469690,30
+"Agricultural Products (Seeds, Seedlings, Plants..)",365,False,469690,30
+Water and Waste Water Treatment Supply & Disposal,331,False,469690,30
+Agricultural Chemicals,307,False,469690,30
+Waste Management and Recycling,282,False,469690,30
+Electrical Systems and Lighting Components,277,False,469690,30
+"Live Animals (Livestock, Birds, Live fish & etc..)",276,False,469690,30
+Radiological/Diagnostic Equipment,275,False,469690,30
+Vehicle Parts and Accessories,274,False,469690,30
+Financial and Insurance Services,262,False,469690,30
+Electronic Parts and Components,241,False,469690,30
+Agricultural Machinery and Equipment,233,False,469690,30
+Fixtures,221,False,469690,30
+Vehicle Repair and Maintenance,216,False,469690,30
+Transportation and Communications Services,214,False,469690,30
+"Bedclothes, Linens and Towels",211,False,469690,30
+General Engineering Services,209,False,469690,30
+Security Services,208,False,469690,30
+Industrial Machinery and Equipment,202,False,469690,30
+Printing Supplies,192,False,469690,30
+Education and Training Services,189,False,469690,30
+Sporting Goods,189,False,469690,30
+Office Equipment Parts and Accessories,179,False,469690,30
+Janitorial Services,176,False,469690,30
+Signage and Accessories,169,False,469690,30
+Water Service Connection Materials/Fittings,164,False,469690,30
+Tokens and Awards,161,False,469690,30
+Events Management,158,False,469690,30
+Textiles,141,False,469690,30
+Corporate Giveaways,135,False,469690,30
+Pest Control Products,127,False,469690,30
+Reproduction Services,114,False,469690,30
+Plastic Products,111,False,469690,30
+Paper Materials and Products,97,False,469690,30
+Audio and Visual Equipment,93,False,469690,30
+Pest Control Services,90,False,469690,30
+Advertising Agency Services,84,False,469690,30
+Airconditioning Maintenance Services,84,False,469690,30
+Furniture Parts and Accessories,82,False,469690,30
+Metal Fabrication,76,False,469690,30
+Food Processing Equipment,72,False,469690,30
+Machine Tools,71,False,469690,30
+Laundry Services,70,False,469690,30
+Power Generation and Distribution Machinery,67,False,469690,30
+Print and Broadcast and Aerial Advertising,65,False,469690,30
+Investigative Equipment,57,False,469690,30
+Dairy Products,56,False,469690,30
+Construction Management Services,52,False,469690,30
+Geotechnical Instrumentation,49,False,469690,30
+Fertilizers,48,False,469690,30
+Construction Equipment,46,False,469690,30
+Surveying Instruments,44,False,469690,30
+Security Surveillance and Detection Equipment,44,False,469690,30
+Chemical Detergents,43,False,469690,30
+Communication Equipment,40,False,469690,30
+Internet Services,39,False,469690,30
+Mining Equipment and Supplies,38,False,469690,30
+Communication Equipment & Parts and Accessories,38,False,469690,30
+Packaging Supplies and Materials,37,False,469690,30
+Lifting equipment and accessories,33,False,469690,30
+IT Broadcasting and Telecommunications,32,False,469690,30
+Meteorological Equipments and Instruments,32,False,469690,30
+Systems Integration,32,False,469690,30
+Telecommunications Provider,31,False,469690,30
+"Editorial, Design, Graphic and Fine Art Services",28,False,469690,30
+Surveying Services,27,False,469690,30
+Arts and Crafts Accessories and Supplies,27,False,469690,30
+Janitorial Equipment,25,False,469690,30
+Freight Forwarder Services,25,False,469690,30
+Cargo Forwarding and Hauling Services,22,False,469690,30
+Computer Furniture,22,False,469690,30
+Hydrological Instruments,21,False,469690,30
+Beverages,21,False,469690,30
+Industrial Safety Equipment,20,False,469690,30
+Industrial pumps and compressors,19,False,469690,30
+Packed Food Distributor,18,False,469690,30
+Microfilm Equipment - Supplies and Accesories,16,False,469690,30
+Well Drilling and Construction Services,15,False,469690,30
+Automation Equipment,14,False,469690,30
+Rice Milling Services,14,False,469690,30
+Funeral and Associated Services,13,False,469690,30
+Horizontal Directional Drilling,13,False,469690,30
+Landscaping Services,13,False,469690,30
+Video Production Services,12,False,469690,30
+Aviation Products,11,False,469690,30
+Public Relations Programs or Services,10,False,469690,30
+Musical Instrument Parts and Accesories,10,False,469690,30
+Architectural Design,9,False,469690,30
+Quartermaster Items,8,False,469690,30
+Market Research Services,8,False,469690,30
+Microfilm Equipment,8,False,469690,30
+Photographic Equipment,8,False,469690,30
+"Purses, handbags and bags",8,False,469690,30
+Mail and Cargo Transport Services,8,False,469690,30
+Navigation Equipment,7,False,469690,30
+Newspapers,7,False,469690,30
+Structured Cabling,7,False,469690,30
+Photography Services,7,False,469690,30
+Musical Instruments,6,False,469690,30
+"Photographic Parts, Supplies and Accessories",6,False,469690,30
+Transmission and Distribution Lines,6,False,469690,30
+Institutional food services equipment,6,False,469690,30
+Ammunitions and Explosives,6,False,469690,30
+Aviation Services,6,False,469690,30
+Gaming Equipment and Paraphernalia,5,False,469690,30
+Mailing Supplies,5,False,469690,30
+Flags,5,False,469690,30
+Aircraft Spare Parts,4,False,469690,30
+Guns and Weapons,4,False,469690,30
+Marine Transport,4,False,469690,30
+Traffic Control Systems,4,False,469690,30
+Maritime Spare Parts,3,False,469690,30
+Oil/Heat Chemical Resistant Rubber,3,False,469690,30
+Games and Toys,3,False,469690,30
+Preserved or Processed Foods,2,False,469690,30
+Sub-station Contractors,2,False,469690,30
+Ordnance Products,1,False,469690,30
+Telecommunications Engineering,1,False,469690,30

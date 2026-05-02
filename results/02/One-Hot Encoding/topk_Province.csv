@@ -1,0 +1,84 @@
+level,count,kept,coverage_rows,top_k
+Metro Manila,122873,True,370398,25
+Bataan,30353,True,370398,25
+Iloilo,22171,True,370398,25
+Cebu,16383,True,370398,25
+Albay,14657,True,370398,25
+Camarines Sur,12989,True,370398,25
+Benguet,12324,True,370398,25
+Leyte,11589,True,370398,25
+Batangas,11293,True,370398,25
+Negros Occidental,10923,True,370398,25
+Davao Del Sur,9076,True,370398,25
+Zamboanga Del Sur,8384,True,370398,25
+Bohol,8244,True,370398,25
+Misamis Oriental,7470,True,370398,25
+Surigao Del Norte,7145,True,370398,25
+Pampanga,7113,True,370398,25
+Davao Del Norte,7093,True,370398,25
+Ilocos Norte,6842,True,370398,25
+La Union,6588,True,370398,25
+Nueva Ecija,6400,True,370398,25
+Negros Oriental,6290,True,370398,25
+Pangasinan,6212,True,370398,25
+Quezon,6153,True,370398,25
+Zamboanga Del Norte,5972,True,370398,25
+Laguna,5861,True,370398,25
+Northern Samar,5478,False,370398,25
+Cavite,5368,False,370398,25
+Isabela,5278,False,370398,25
+Tarlac,5205,False,370398,25
+Cagayan,5085,False,370398,25
+South Cotabato,4915,False,370398,25
+Bukidnon,4537,False,370398,25
+Palawan,4481,False,370398,25
+Rizal,4122,False,370398,25
+Southern Leyte,3951,False,370398,25
+Maguindanao,3907,False,370398,25
+Nueva Vizcaya,3651,False,370398,25
+Ilocos Sur,3395,False,370398,25
+Surigao Del Sur,3372,False,370398,25
+Apayao,3366,False,370398,25
+Agusan Del Norte,3057,False,370398,25
+Oriental Mindoro,2940,False,370398,25
+Siquijor,2779,False,370398,25
+Aklan,2490,False,370398,25
+Agusan Del Sur,2245,False,370398,25
+Cotabato,2206,False,370398,25
+Capiz,2195,False,370398,25
+Davao Occidental,1989,False,370398,25
+Romblon,1961,False,370398,25
+Occidental Mindoro,1765,False,370398,25
+Zambales,1685,False,370398,25
+Camarines Norte,1590,False,370398,25
+Eastern Samar,1375,False,370398,25
+Sorsogon,1310,False,370398,25
+Bulacan,1301,False,370398,25
+Mountain Province,1276,False,370398,25
+Aurora,1254,False,370398,25
+Davao de Oro (Compos. Valley),1249,False,370398,25
+Samar,1199,False,370398,25
+Camiguin,1032,False,370398,25
+Antique,991,False,370398,25
+Misamis Occidental,979,False,370398,25
+Zamboanga Sibugay,968,False,370398,25
+Marinduque,968,False,370398,25
+Sarangani,863,False,370398,25
+Lanao Del Sur,858,False,370398,25
+Quirino,856,False,370398,25
+Masbate,761,False,370398,25
+Kalinga,697,False,370398,25
+Batanes,665,False,370398,25
+Catanduanes,656,False,370398,25
+Biliran,640,False,370398,25
+Basilan,634,False,370398,25
+Sultan Kudarat,605,False,370398,25
+Davao Oriental,560,False,370398,25
+Lanao Del Norte,536,False,370398,25
+Dinagat Islands,529,False,370398,25
+Abra,367,False,370398,25
+Ifugao,360,False,370398,25
+(Independent City),313,False,370398,25
+Guimaras,238,False,370398,25
+Sulu,146,False,370398,25
+Tawi-Tawi,8,False,370398,25

@@ -1,0 +1,55 @@
+level,count,kept,coverage_rows,top_k
+Lot,154909,True,479891,20
+Piece,84967,True,479891,20
+Box,48298,True,479891,20
+Unit,38005,True,479891,20
+Bottle,31055,True,479891,20
+Lump Sum,22875,True,479891,20
+Tablet,20116,True,479891,20
+Vial,16995,True,479891,20
+Pack,13809,True,479891,20
+Set,13160,True,479891,20
+Ampule,10617,True,479891,20
+Package,4883,True,479891,20
+Capsule,4446,True,479891,20
+Roll,3753,True,479891,20
+Gallon,3563,True,479891,20
+Tube,2458,True,479891,20
+Each,2412,True,479891,20
+Pair,1342,True,479891,20
+Cartridge,1327,True,479891,20
+Bag,901,True,479891,20
+Dozen,859,False,479891,20
+Liter,778,False,479891,20
+Nebule,734,False,479891,20
+Copy,671,False,479891,20
+Can,654,False,479891,20
+Kilo,548,False,479891,20
+Cycle,381,False,479891,20
+Pad,300,False,479891,20
+Jar,291,False,479891,20
+Dose,288,False,479891,20
+Cubic Meter,272,False,479891,20
+Bundle,250,False,479891,20
+Sheet,209,False,479891,20
+Square Meter,204,False,479891,20
+Sack,195,False,479891,20
+Book,187,False,479891,20
+Ream,176,False,479891,20
+Meter,125,False,479891,20
+Pail,108,False,479891,20
+Spool,91,False,479891,20
+Gram,89,False,479891,20
+Packet,83,False,479891,20
+Carton,63,False,479891,20
+License,52,False,479891,20
+Bar,31,False,479891,20
+Board Feet,23,False,479891,20
+Quart,17,False,479891,20
+Feet,16,False,479891,20
+Mile,6,False,479891,20
+Kilometer,4,False,479891,20
+Crate,3,False,479891,20
+Quire,2,False,479891,20
+Inch,2,False,479891,20
+Hectare,2,False,479891,20

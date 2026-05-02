@@ -6,8 +6,10 @@ __pycache__/
 *.egg-info/
 .eggs/
 
-# Tabular/spreadsheet data (not in repo)
+# Tabular/spreadsheet data — exclude by default except small result summaries
 *.csv
+# Track CSV outputs only under results/ (schema, correlations, summaries; not bulk data).
+!/results/**/*.csv
 *.xlsx
 *.xls
 *.xlsm

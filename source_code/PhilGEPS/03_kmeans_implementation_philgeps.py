@@ -31,7 +31,7 @@ Visualizations under MedFlowPH/results/03/ — all 3D PCA scatters use PC1, PC2,
         01_pca_3d_unlabeled.png
         02_pca_3d_clusters.png
         03_pca_3d_clusters_with_centroids.png
-        04_clustering_results_by_k_pca2d.png   (grid: per k row = PC1–PC2, PC1–PC3, PC2–PC3)
+        04_silhouette_vs_k.png                (mean silhouette vs K; same figure as 05)
     PCA Scatter per Cluster/
         cluster_<k>_pca_3d.png            (one figure per final cluster)
     Cluster Interpretation/
@@ -71,7 +71,7 @@ import os
 import sys
 import time
 from datetime import datetime
-from typing import Any, Callable, TextIO
+from typing import Any, Callable, Sequence, TextIO
 
 import matplotlib
 
@@ -185,8 +185,6 @@ SCATTER_3D_PC2_LIM: tuple[float, float] | None = (-4.35, 5.15)
 SCATTER_3D_LIM_OUTSET_FRAC = 0.055
 # PC3 uses only this fraction of SCATTER_3D_LIM_OUTSET_FRAC (reduces empty top/bottom).
 SCATTER_3D_Z_OUTSET_REL = 0.55
-# Points shown in the K-by-k PCA figure (one subsample shared across all k rows and PC pair columns).
-GRID_PCA2D_MAX_POINTS = 25_000
 FINAL_KMEANS_N_INIT = 10
 FINAL_KMEANS_MAX_ITER = 300
 DUMMY_LIFT_MIN_SUPPORT = 0.02
@@ -862,6 +860,7 @@ def _plot_silhouette_curve(
     out_path: str,
     *,
     k_sil_argmax: int | None = None,
+    additional_save_paths: Sequence[str] | None = None,
 ) -> None:
     if k_sil_argmax is None:
         k_sil_argmax = int(sweep.loc[sweep["silhouette_mean"].idxmax(), "k"])
@@ -976,6 +975,8 @@ def _plot_silhouette_curve(
 
     plt.tight_layout(rect=[0.02, 0.11, 0.98, 0.96])
     fig.savefig(out_path, dpi=150)
+    for extra in additional_save_paths or ():
+        fig.savefig(extra, dpi=150)
     plt.close(fig)
 
 
@@ -1030,119 +1031,6 @@ def _plot_silhouette_supporting_metrics(
     )
     plt.tight_layout()
     fig.savefig(out_path, dpi=150, bbox_inches="tight")
-    plt.close(fig)
-
-
-def _plot_clustering_results_grid_pca2d(
-    X_pc123: np.ndarray,
-    labels_by_k: dict[int, np.ndarray],
-    sweep: pd.DataFrame,
-    best_k: int,
-    *,
-    out_path: str,
-    info_view: dict[str, Any],
-    labels_best_k_final: np.ndarray | None = None,
-) -> None:
-    """
-    For each candidate K, one row of three 2D projections matching the 3D scatter axes:
-    PC1–PC2, PC1–PC3, PC2–PC3 (same PCA basis as 02_pca_3d_clusters). Colors follow
-    _palette (same discrete hues as the 3D figures).
-
-    labels_best_k_final: same row order as X_pc123; when set, the best_k row uses these labels
-    (final full-data KMeans) instead of the sweep fit for that K.
-    """
-    if not labels_by_k:
-        return
-    ks = sorted(labels_by_k.keys())
-    ratios = info_view.get("explained_variance_ratio", [0.0, 0.0, 0.0])
-    r1 = float(ratios[0]) * 100.0 if len(ratios) > 0 else 0.0
-    r2 = float(ratios[1]) * 100.0 if len(ratios) > 1 else 0.0
-    r3 = float(ratios[2]) * 100.0 if len(ratios) > 2 else 0.0
-
-    Xv = np.asarray(X_pc123, dtype=float)
-    if Xv.ndim != 2 or Xv.shape[1] < 3:
-        raise ValueError(
-            "_plot_clustering_results_grid_pca2d expects X_pc123 with shape (n, 3+) "
-            f"(got {Xv.shape})",
-        )
-    Xv = Xv[:, :3]
-    n = Xv.shape[0]
-    if n == 0:
-        return
-    plot_idx: np.ndarray
-    if n > GRID_PCA2D_MAX_POINTS:
-        rng = np.random.default_rng(int(RANDOM_SEED) + 7)
-        plot_idx = rng.choice(n, GRID_PCA2D_MAX_POINTS, replace=False)
-    else:
-        plot_idx = np.arange(n, dtype=np.int64)
-    Xp = Xv[plot_idx]
-
-    sil_by_k = {int(r["k"]): float(r["silhouette_mean"]) for _, r in sweep.iterrows()}
-
-    sil_colors = "#e8f5f0"
-    best_edge = "#1b4332"
-    sns.set_theme(style="whitegrid", context="notebook")
-    n_k = len(ks)
-    pair_axes = (
-        (0, 1, f"PC1 ({r1:.1f}%)", f"PC2 ({r2:.1f}%)"),
-        (0, 2, f"PC1 ({r1:.1f}%)", f"PC3 ({r3:.1f}%)"),
-        (1, 2, f"PC2 ({r2:.1f}%)", f"PC3 ({r3:.1f}%)"),
-    )
-    pair_short = ("PC1–PC2", "PC1–PC3", "PC2–PC3")
-    fig_w = min(4.0 * 3 + 1.0, 14.5)
-    fig_h = min(2.55 * n_k + 1.2, 36)
-    fig, axes = plt.subplots(
-        n_k, 3, figsize=(fig_w, fig_h), dpi=150, facecolor=sil_colors,
-        squeeze=False,
-    )
-    axes = np.atleast_2d(axes)
-
-    for ri, k in enumerate(ks):
-        if k == best_k and labels_best_k_final is not None:
-            labels = labels_best_k_final[plot_idx].astype(np.int64, copy=False)
-        else:
-            labels = labels_by_k[k][plot_idx].astype(np.int64, copy=False)
-        sil = sil_by_k.get(k, float("nan"))
-        is_best = k == best_k
-        palette_k = _palette(int(k))
-        colors = palette_k[labels]
-
-        for ci in range(3):
-            ax = axes[ri, ci]
-            i0, i1, xl, yl = pair_axes[ci]
-            ax.scatter(
-                Xp[:, i0], Xp[:, i1], c=colors,
-                alpha=0.78, s=7, linewidths=0.12, edgecolors="white",
-            )
-            ax.set_facecolor(sil_colors)
-            ax.set_xlabel(xl, fontsize=8)
-            ax.set_ylabel(yl, fontsize=8)
-            ax.grid(True, alpha=0.35)
-            if ci == 0:
-                ax.set_title(
-                    f"k={k}" + (" (best)" if is_best else "") + f"\nSil={sil:.3f}",
-                    fontsize=10, fontweight="bold", loc="left",
-                )
-            else:
-                ax.set_title(pair_short[ci], fontsize=9)
-
-            if is_best:
-                for spine in ax.spines.values():
-                    spine.set_linewidth(2.2)
-                    spine.set_color(best_edge)
-
-    same_final = labels_best_k_final is not None
-    fig.suptitle(
-        "K-Means clustering across candidate k — PhilGEPS (three 2D views of PC1–PC3)\n"
-        "Each row: same k; columns = PC1–PC2, PC1–PC3, PC2–PC3 (axes match 02/03 PCA 3D scatters). "
-        "Colors = cluster id (discrete palette). "
-        f"'best' = K={best_k} (composite rule)"
-        + ("; best row = final full-data KMeans labels." if same_final else ". ")
-        + f"n_plot={Xp.shape[0]:,}.",
-        fontsize=11.5, fontweight="bold", y=1.008,
-    )
-    plt.tight_layout(rect=[0, 0.01, 1, 0.965])
-    fig.savefig(out_path, facecolor=fig.get_facecolor(), edgecolor="none", bbox_inches="tight")
     plt.close(fig)
 
 
@@ -1806,7 +1694,7 @@ def run_step03(input_csv: str = PATH_INPUT_CSV) -> None:
         log(f"Clustering on standardized full matrix (v1 mode): shape={X_for_kmeans.shape}")
 
     # ---- K sweep + composite K selection -----------------------------------
-    sweep, labels_by_k, sweep_row_idx = k_sweep(X_for_kmeans, k_values=K_RANGE, log=log)
+    sweep, _labels_by_k, sweep_row_idx = k_sweep(X_for_kmeans, k_values=K_RANGE, log=log)
     if sweep.empty:
         raise Step03ValidationError("K sweep produced no rows (check n vs K_RANGE).")
     sweep.to_csv(OUT_SILHOUETTE_CSV, index=False)
@@ -1823,11 +1711,20 @@ def run_step03(input_csv: str = PATH_INPUT_CSV) -> None:
         f"composite_score={best_composite:.4f}. "
         f"(Silhouette-only argmax would be K={k_sil_only}.)",
     )
+    silhouette_vs_k_pca_scatter = os.path.join(
+        PATH_RES_PCA_SCATTER, "04_silhouette_vs_k.png",
+    )
     _plot_silhouette_curve(
         sweep,
         best_k,
         os.path.join(PATH_RESULTS_03, "05_silhouette_score_vs_k.png"),
         k_sil_argmax=k_sil_only,
+        additional_save_paths=(silhouette_vs_k_pca_scatter,),
+    )
+    log(
+        "Wrote silhouette vs K -> "
+        f"{os.path.join(PATH_RESULTS_03, '05_silhouette_score_vs_k.png')} "
+        f"and {silhouette_vs_k_pca_scatter}",
     )
     _plot_silhouette_supporting_metrics(
         sweep,
@@ -1839,18 +1736,6 @@ def run_step03(input_csv: str = PATH_INPUT_CSV) -> None:
     # ---- Final KMeans refit at best K ----------------------------------------
     final_model, labels = fit_final_kmeans(X_for_kmeans, best_k=best_k, log=log)
     cluster_centers_native = final_model.cluster_centers_
-
-    grid_out = os.path.join(PATH_RES_PCA_SCATTER, "04_clustering_results_by_k_pca2d.png")
-    _plot_clustering_results_grid_pca2d(
-        X_pca_full[sweep_row_idx, :3],
-        labels_by_k,
-        sweep,
-        best_k,
-        out_path=grid_out,
-        info_view=info_view,
-        labels_best_k_final=labels[sweep_row_idx],
-    )
-    log(f"Wrote K-by-k PCA 2D grid -> {grid_out}")
 
     if CLUSTER_ON_PCA:
         # KMeans fit in n_full-D PCA space. Reconstruct standardized space using

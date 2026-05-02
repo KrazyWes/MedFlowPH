@@ -1,5 +1,5 @@
 PhilGEPS step 03 — cluster interpretation summary
-Generated: 2026-04-28T15:47:03
+Generated: 2026-05-02T11:25:17
 K = 3, total n = 487,605
 
 Heuristic descriptors are derived from z-scored numeric centroids and top dummy lift.

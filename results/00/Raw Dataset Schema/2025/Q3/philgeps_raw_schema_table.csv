@@ -1,0 +1,47 @@
+canonical_position,column_name,in_canonical_46,pandas_dtype,row_count,null_count,null_pct,non_null_count,nunique_non_null,nunique_how,kmeans_feature_role
+1,Procuring Entity (PE),True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+2,Region,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+3,Province,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+4,City/Municipality,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+5,Government Branch,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+6,PE Organization Type,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+7,PE Organization Type (Grouped),True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+8,Bid Reference No.,True,int64,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),identifier_skip
+9,Notice Title,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+10,Classification,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+11,Procurement Mode,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+12,Business Category,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+13,Funding Source,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+14,Funding Instrument,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+15,Trade Agreement,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+16,Approved Budget of the Contract,True,float64,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),numeric_ready
+17,Published Date,True,object,361502,5403,1.4946,356099,,N/A (see EDA charts in this quarter folder),date_derivable
+18,Closing Date,True,object,361502,9961,2.7554,351541,,N/A (see EDA charts in this quarter folder),date_derivable
+19,Area of Delivery,True,object,361502,29919,8.2763,331583,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+20,Contract Duration,True,float64,361502,1978,0.5472,359524,,N/A (see EDA charts in this quarter folder),other_review
+21,Calendar Type,True,object,361502,9961,2.7554,351541,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+22,Line Item No,True,float64,361502,156215,43.2128,205287,,N/A (see EDA charts in this quarter folder),numeric_ready
+23,Item Name,True,object,361502,156262,43.2258,205240,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+24,Item Description,True,object,361502,156357,43.252,205145,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+25,Quantity,True,float64,361502,156215,43.2128,205287,,N/A (see EDA charts in this quarter folder),numeric_ready
+26,UOM,True,object,361502,156215,43.2128,205287,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+27,Item Budget,True,float64,361502,156215,43.2128,205287,,N/A (see EDA charts in this quarter folder),numeric_ready
+28,Bid Notice Status,True,object,361502,0,0.0,361502,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+29,Award Reference No.,True,float64,361502,281144,77.7711,80358,,N/A (see EDA charts in this quarter folder),identifier_skip
+30,Award Title,True,object,361502,281144,77.7711,80358,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+31,UNSPSC Code,True,float64,361502,281249,77.8001,80253,,N/A (see EDA charts in this quarter folder),identifier_skip
+32,UNSPSC Description,True,object,361502,281249,77.8001,80253,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+33,Published Date(Award),True,object,361502,281144,77.7711,80358,,N/A (see EDA charts in this quarter folder),date_derivable
+34,Award Date,True,object,361502,281144,77.7711,80358,,N/A (see EDA charts in this quarter folder),date_derivable
+35,Contract Amount,True,float64,361502,281344,77.8264,80158,,N/A (see EDA charts in this quarter folder),numeric_ready
+36,Award Notice Status,True,object,361502,281144,77.7711,80358,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+37,Notice to Proceed Date,True,object,361502,308219,85.2607,53283,,N/A (see EDA charts in this quarter folder),date_derivable
+38,Contract Effectivity Date,True,object,361502,308219,85.2607,53283,,N/A (see EDA charts in this quarter folder),date_derivable
+39,Contract End Date,True,object,361502,308219,85.2607,53283,,N/A (see EDA charts in this quarter folder),date_derivable
+40,Awardee Organization Name,True,object,361502,281144,77.7711,80358,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+41,Country of Awardee,True,object,361502,281144,77.7711,80358,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+42,Region of Awardee,True,object,361502,281269,77.8057,80233,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+43,Province of Awardee,True,object,361502,281259,77.8029,80243,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+44,City/Municipality of Awardee,True,object,361502,281203,77.7874,80299,,N/A (see EDA charts in this quarter folder),high_cardinality_text
+45,Awardee Size,True,object,361502,283943,78.5453,77559,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
+46,Awardee Joint Venture,True,object,361502,358154,99.0739,3348,,N/A (see EDA charts in this quarter folder),low_cardinality_encodable
